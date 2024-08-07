@@ -1,0 +1,35 @@
+Evaluation Planner Structure
+Based on LogicalOutcomes Evaluation Planning Handbook
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4815131 
+
+Explore the various Large Language Models and temperatures. We generally use the most capable model with a temperature between .5 and 1 (out of 2) depending on the question, set to the maximum output (e.g., 8192). Test them to see what works best for your use.  
+
+System prompt:
+Today's date is {{currentDate}}
+The Assistant should use sentence case for all headings. For example, "Feedback and ongoing improvement" not "Feedback and Ongoing Improvement". 
+
+User input: 
+Organization name
+Organization URL (optional)
+Program name
+Program URL (optional)
+Program description (optional)
+Upload (optional)
+
+Program analysis:
+See EvalPlanner1-ProgramAnalysis
+
+Evaluation objectives
+See EvalPlanner2-ProgramAnalysis
+
+Logic model evaluation framework
+See EvalPlanner3-LogicModelEvalFramework
+
+Evaluation project plan
+See EvalPlanner4-projectPlan
+
+Combine text
+See EvalPlanner5-finalReport
+
+
+
