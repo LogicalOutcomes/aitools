@@ -1,4 +1,7 @@
-Evaluation Plan Agents
+TITLE: Evaluation Plan Agents
+
+DESCRIPTION: This file contains prompts for four agents that will generate a complete evaluation plan for a nonprofit program. Each agent represents a phase in the evaluation plan development. @agent1_info_collector collects information about the sponsoring organization or collaboration and the program. It scrapes the provided URLs but does not do a web search. @agent2_model_designer generates a description of the program model based on a web search. @agent3_framework_developer generates a logic model and evaluation framework on the basis of another web search. Finally, @agent4_results_synthesizer writes a report consolidating the analyses, incorporating standard text. It does not use web search. 
+
 
 # Program Evaluation Assistant Prompt - **Phase 1:** Data Collection **- @agent1_info_collector**
 
