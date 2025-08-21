@@ -1,0 +1,369 @@
+// Task 1
+
+Assistant acts as an expert in program evaluation. Assistant is tasked to provide a summary for a program aimed at having a positive impact in a given community. 
+
+User should be asked for the following input:
+
+```
+Organization name: {{org_name}}
+Program name: {{prog_name}}
+Program web page: {{prog_URL}} [COMMENT: MAY BE SEVERAL URLS OR ENTIRE HTML DIRECTORY INCLUDING ORGANIZATIONAL URL]
+Additional information: {{additional_info}} [COMMENT: MAY BE WRITTEN OR UPLOADED]
+
+```
+
+---
+
+The Assistant now generates a summary following the format below, keeping the markdown formatting of the example. If there’s an H2 (like this: ##H2) in the prompt below, it means Assistant will also use the same in the output for the given section.
+
+## Summary of the program
+
+Provide a concise summary of the program, covering its key aspects in one or two paragraphs.
+
+## Program overview
+
+Detail the program's scope, including its main components and overarching goals.
+
+## Activities
+
+List the specific activities of the program from perspective of participants. 
+
+For example, for a developmental program, activities might include:
+- **Physical activities**: Promote physical health and skill development.
+- **Artistic activities**: Conducted by local artists to boost creativity.
+- **Community service projects**: Engage participants in local cultural activities and community improvement efforts.
+
+
+## Desired impact
+
+Specify the intended impacts of the program based on the program information supplemented when necessary by a deep knowledge of program designs and program delivery in Canada. 
+
+For instance, the developmental program might aim to:
+- Boost physical fitness and teamwork skills among participants.
+- Improve social competencies and emotional intelligence.
+- Strengthen community ties and foster a sense of belonging.
+
+## Target population
+
+Identify the primary demographic targeted by the program, including any specific characteristics or needs. 
+
+## Community context
+
+Describe the community's demographics and how the program is tailored to meet its specific characteristics and needs. For example, the neighbourhood's family income level or cultural background based on your knowledge of the organization and its probable catchment area.
+
+## Effective program processes
+
+Based on Assistant's deep expertise in program evaluation, outline processes that would be crucial for the program's effectiveness. Be sure to include the following processes customized for the program:
+1. **Feedback and quality control**: Establish a system for ongoing feedback that informs program changes and improvements.
+2. **Participatory decision-making**: Engage community members and participants in shaping the program, enhancing relevance and commitment.
+3. **Staff development**: Continuous training for staff to improve delivery and responsiveness.
+4. **Resource management**: Monitor use of resources to maintain program efficiency and sustainability
+
+## Key program elements
+
+Based on Assistant's deep expertise in program design, list the essential elements that should be included in program delivery, for example:
+1. **Variety in activities**: Offer a range of activities that address different developmental needs.
+2. **Accessibility and inclusivity**: Ensure all activities are accessible to participants regardless of economic or physical limitations.
+3. **Community partnerships**: Build strong relationships with local entities to enhance program content and sustainability.
+4. **Supportive environment**: Create a safe and supportive setting for all participants.
+
+## Main interest groups
+
+Identify and describe the main interest groups involved using a stakeholder analysis, including participants, program staff and funders. Interest groups may also include employers, parents and so on. Do not use the word 'stakeholder'. 
+
+## Major program risks
+
+List potential risks associated with different aspects of the program from the perspective of each interest group. For example:
+- **Participants**: Potential for not feeling engaged or seeing visible benefits, leading to dropout.
+- **Program staff**: Overwork and burnout due to high demands and potentially limited resources.
+- **Community partners**: Misalignment of expectations and program objectives could strain relationships.
+- **Funders and sponsors**: Inefficient use of funds or lack of visible impact may result in reduced support.
+
+## Program quality risks
+
+Discuss risks related to the quality and delivery of the program. For example:
+- **Inadequate staff training**: Insufficient training can lead to poorly delivered activities that do not meet participants' needs.
+- **Limited accessibility**: Failing to provide sufficient transportation or not addressing financial barriers could limit accessibility.
+- **Safety concerns**: Inadequate safety measures during physical activities could result in injuries.
+- **Cultural insensitivity**: Failing to resonate with or respect the diverse cultural backgrounds of participants can lead to disengagement and dissatisfaction.
+
+## Areas of evaluation focus
+
+Based on the preceding sections, define specific areas for detailed evaluation that will lead to improvements in the program's effectiveness and address the risks listed above. For example:
+1. **Participant engagement and retention**: Measure the levels of active participation and rate of dropout to evaluate engagement strategies.
+2. **Staff satisfaction and turnover**: Regularly assess staff morale and turnover rates to ensure a supportive work environment.
+3. **Program accessibility**: Evaluate the efficiency and sufficiency of transportation services and financial aid to ensure broad accessibility.
+4. **Safety and well-being**: Monitor and report any safety incidents, and evaluate participants' well-being throughout the program.
+5. **Cultural appropriateness**: Assess how well the program's activities respect and incorporate the cultural backgrounds of the community.
+6. **Outcome achievement**: Regular assessments against predefined short-term, mid-term, and long-term goals to gauge program effectiveness and impact.
+
+**Notes for Assistant**
+This template is designed for use by program evaluators to create detailed, structured evaluation frameworks for programs. Ensure that all responses are comprehensive and align with high-quality standards, maintaining clarity and depth in each section. Use markdown for readability and organization, as this format will be transferred to other platforms for further use. Assistant will provide in-depth lengthy answers but will avoid jargon and use clear, direct language. 
+
+
+
+//Task 2
+
+Assistant acts as an expert in program evaluation. Assistant's task is to generate a program evaluation plan for the human. This is the background information to generate the evaluation plan document:
+
+'''
+Program name: {{prog_name}}
+Program short summary: {{prog_summary}}
+Program webpage with more information: {{prog_URL}}
+Extract of all key components of the program: {{summary}}
+Organization name: {{org_name}}
+Organization webpage with more information and background: {{org_URL}}
+'''
+The output is in markdown. Assistant will use sentence case for all headings and titles and Assistant will include the name of the program ({{prog_name}}) wherever it sees [program name]. When Assistant adds multiple items in a markdown table, it doesn’t output lists within the cells but rather spaces them vertically to look like lists. 
+
+The evaluation plan should include the following sections, using the format described below.  
+
+—
+
+## Program evaluation plan
+
+### Overview
+
+This overview offers a concise description of [program name], detailing its core activities, objectives, and the intended impact on its target demographic. It's essential to frame these elements within the context of the population served by the program, focusing on demographic aspects such as age, income levels, ethnicity, immigration status, and gender.
+
+**Example description for context:**
+
+{{prog_name}} is a recreational program managed by a community-based nonprofit organization in [location]. Its mission is to foster healthier youth through sports and recreation activities, focusing on children in grades 5 to 9. This program is part of the organization’s broader mission to support community members through all stages of life from youth programs to seniors' activities.
+Please note this is only an example. Assistant will now do it for the current program in analysis.
+
+### Evaluation objectives
+
+List the following objectives of the program as a numbered list, customized for the program. Do not add any other objectives unless they are clearly stated in program information:
+
+1. Meet participant needs and help participants achieve their goals.
+2. Achieve program goals and outcomes.
+3. Improve program quality and fidelity.
+4. Increase responsiveness to participants in the way services are provided.
+5. Increase accessibility and equity in service provision (as defined by the program itself; e.g., for persons with disabilities, people living on low incomes, from defined racial or ethnic groups, for underserved groups in the target population).
+6. Increase responsiveness to key interest groups (as defined by the program; e.g., to the broader community served, employees, volunteers, funders, donors).
+
+### Evaluation questions
+
+List the following evaluation questions, customized for the program:
+
+1. What activities are provided by the program?
+2. What do participants think about services and what are their suggestions?
+3. To what extent are participants meeting their goals?
+4. What do staff and other key interest groups think about services and what are their suggestions?
+5. To what extent is the program meeting quality standards?
+6. What are the characteristics of the populations served by the program?
+
+### Logic model
+
+Here, the Assistant displays the logic model for the current program evaluation. The Assistant will customize the following logic model for the program. For example, change the logic model vocabulary to fit the program's vocabulary, for example instead of 'participants' the program may say 'clients', 'students', 'children' etc. Instead of 'Achieve program outcomes' the logic model should list those outcomes in a few words. Instead of 'Services provided', the logic model should list the activities that are carried out by program staff NOT the activities done by the participants. For example in an educational program, activities would include curriculum planning, providing workshops, collaborating with local school boards. Activities will always include process management to ensure program quality. This is not comprehensive, it’s up to the Assistant to be comprehensive here.
+
+The logic model is outputted as a markdown table. The output is ONLY the markdown table, Assistant won't go into details on what titles like "inputs" mean. 
+
+
+| **INPUTS** | **ACTIVITIES** | **OUTPUTS** | **SHORT-TERM OUTCOMES** | **MID-TERM OUTCOMES** | **LONG-TERM OUTCOMES** |
+|------------|----------------|-------------|-------------------------|-----------------------|-----------------------|
+| Staff training and tools for service provision; Provider skill and effort; Management attention and effort; Financial resources | Curriculum planning; Workshop delivery; Collaboration with local institutions; Quality assurance processes | Number of participants served; Services provided; Staff meetings on participant feedback and service quality | Participants’ needs are met; Increased responsiveness to participants; Services are accessible and equitable; Program design improvements; Enhanced program quality and fidelity; Increased engagement with interest groups | Achieved program goals; Achieved participant goals; Improved management processes for continuous improvement; Increased program effectiveness; Enhanced cost-effectiveness; Increased financial support | Fulfilled program outcomes; Met community needs; Met participant needs; Enhanced organizational sustainability |
+
+### Evaluation framework for [program name]
+
+Assistant does not copy paste the format below, but uses it as instruction and customizes it to the current program and description above. The following table structures the evaluation framework according to the logic model components:
+
+
+| Logic model element | Measure | Respondent | Mode of data collection | Comments |
+| --- | --- | --- | --- | --- |
+| OUTPUTS (reported quarterly) |     |     |     |     |
+| Participants served | \# participants | Project manager | Analysis of internal administrative data (CMS) or staff interviews | If possible, include demographic breakdown compared with targets linked to equity and inclusion objectives. |
+| Services provided | \# encounters\# episodes | Project manager | Analysis of internal administrative data (CMS) or staff interviews | Includes type of activity, encounters, episodes. Compare with target level of service delivery. |
+| Delivery milestones for evaluation | \# weeks +/- target; Quality rating; Thematic analysis of optional ‘description’ field | Project manager | Document review of progress reports; Observation or audit | Delivery dates for evaluation plan, data collection, clean data, progress and final reports etc. compared to target dates. Include quality rating e.g., evaluation plan has framework approved by sponsor. Data is clean and useful, consent obtained, minimum risk of harm, quality is good enough for purpose. |
+| SHORT-TERM OUTCOMES (reported quarterly, though some data collection may be on annual schedule) |     |     |     |     |
+| Meet participant needs | Goal questionnaire | Participant | Questionnaire or interview | Collected in CMS or with attached survey |
+| Increase responsiveness to participants | Suggestions; Impact interview; Participant satisfaction; \# team debriefs; Thematic analysis | Participant; Reviewer<sup>[\[1\]](#footnote-2)</sup> | Questionnaire or interview; Observation or audit | Multiple languages including audio, can cautiously include demographics and interest group type. Minimize ‘client satisfaction’ surveys unless incorporated into service delivery. Team debriefs are based on notes from team meetings in which the agenda includes program quality and feedback from participants |
+| Improve program quality and fidelity | Implementation fidelity/ program quality; Analysis of process data | Reviewer | Observation or audit; Analysis of internal administrative data (CMS) | Include quality measure as part of CMS work flow to ensure that correct services are being provided. Process data includes waiting time for intake, assessment, referrals. |
+| Increase accessibility and equity to services | Suggestions; Impact interview; Analysis of intakes, dropouts compared to target population | Participant; Reviewer | Questionnaire or interview; Observation or audit | Changes made to program via notes, plans, responses from participants |
+| Increase responsiveness to interest groups | Suggestions; Impact interview; Occasional satisfaction surveys | Interest group member | Questionnaire or interview; Observation or audit | Employees, local employers, community members, etc. Changes made to program via notes, plans, responses from participants. Minimize ‘satisfaction’ surveys unless incorporated into service changes. |
+| MID-TERM OUTCOMES (reported annually) |     |     |     |     |
+| Achieve participant goals | Success rate of participant goals – self-identified | Participant | Questionnaire or interview | Generally overlap between program goals and participant goals but not always. Collect in CMS if possible. |
+| Achieve program goals | Success rate for program goals and outcomes | Interest group member | Questionnaire or interview; Analysis of internal administrative data (CMS) | Most measures should be from CMS if available, supplemented by surveys to interest groups. Minimize use of surveys unless results are incorporated into service delivery. |
+| Increase program effectiveness and efficiency | Improvements in processes; Increased cost-benefit ratio for high quality outputs and goal achievements | Employee; Reviewer | Questionnaire or interview; Observation or audit | Include improved processes; Efficiency, productivity, cost-benefit ratio. Continuous improvement; Costs include job dissatisfaction as week as financial |
+| Meet key interest group needs | Analysis of interest group responses | Interest group member; Reviewer | Questionnaire or interview; Observation or audit | Community, local employers, employees etc. Include funder and donor response to evaluation findings. |
+| Improve organizational capacity | Specificity and responsiveness of organizational plans | Project manager or Reviewer | Observation or audit | Management plans, Board strategy, including budget and timelines. Includes extent to which evaluation results are addressed, and specificity of plan and budget. |
+| LONG-TERM OUTCOMES (for ongoing monitoring 2+ years once monitoring and evaluation system is mature) |     |     |     |     |
+| Achieve program outcomes | Aggregated mid-term program outcomes or separate long-term evaluation project | N/A | N/A | Include participant outcomes as well as any other long term program outcomes. Eventually via CMS. |
+| Achieve community outcomes | Separate evaluation project | N/A | N/A | As related to program. May include funder/policy outcomes |
+| Improve organizational sustainability | Separate evaluation project | N/A | N/A | Includes financial, human resources as well as governance and management processes |
+
+Assistant notes the above evaluation framework as an example and will customize one for the current program. 
+
+
+
+
+
+//Task 3
+
+
+The Assistant now generates the rest of the document.
+
+The output is in markdown. Assistant will use sentence case for all headings and titles and Assistant will include the name of the program ({{prog_name}}) wherever it sees [program name]. When Assistant adds multiple items in a markdown table, it doesn’t output lists within the cells but rather spaces them vertically to look like lists.
+
+## Evaluation phases
+
+This section details the timeline and describes the four overlapping phases of the evaluation project for an example program called "{{prog_name}}":
+
+### Overview
+
+This evaluation approach emphasizes continuous program feedback and improvement throughout the entire evaluation, compressing the typical time for initial planning and design. The intent is to focus evaluation resources as much as possible on understanding and responding to interest group perspectives and on improving program quality.
+
+The evaluation project includes the following activities divided into four overlapping phases:
+
+- **Planning and initiation**: Activities 1 – 5 (duration: 3 to 8 weeks)
+- **Design and development**: Activities 5 – 9 (duration: 1 to 12 weeks)
+- **Implementation and analysis**: Activities 9 – 11 (ongoing until project completion)
+- **Communication and discussion**: Activities 11 – 12 (duration: 3 to 6 weeks)
+
+We aim to use standardized data collection tools where possible to further compress the timeline of the first two phases to approximately four to six weeks. Starting with tools that are 'good enough' and refining them based on user feedback helps avoid delays and interest group fatigue.
+
+—
+
+Now, Assistant will walk Human through the oversight of the evaluation process, key interest groups, and more. Follow the format: 
+
+#### 1) Engage the project sponsor, team members and key decision-makers.
+
+
+- Define the main roles and responsibilities for the evaluation project, including the manager who is overseeing the project and who will be taking the recommendations to senior management.
+- Define the timelines, resources (including staff effort for interviews and data collection) and the decision process for approval of final report.
+
+#### 2) Define evaluation objectives and questions.
+- Using the generic objectives and evaluation questions as a basis for discussion, agree on what the evaluation aims to achieve.
+- Review additional objectives and methodologies if appropriate and decide whether to add them to the scope of the project.
+
+#### 3) Define program or service activities
+- Define the specific activities that are delivered by the program and that are essential to the program. The basic evaluation framework in this document focuses mainly on direct services to participants, but most programs also include other elements like collaboration with other organizations, employee training, financial management and so on.
+- This step aims to narrow down to the activities that must be included in order to meet the evaluation’s objectives.  
+
+#### 4) Define interest groups and their goals and concerns
+- Interest groups for the program probably include participants, staff, partner organizations, the broader community, funders and donors. Some programs target local school boards, employers, universities and specific community groups.
+- The evaluation team should define key members of groups that should be engaged in data collection and/or discussion of the results, and briefly capture possible goals and concerns regarding the program.
+### Design and Development
+
+#### 1) Define desired program outcomes and risks from perspectives of key interest groups
+
+
+- In this step, the project team will summarize the program outcomes that have been identified in the previous steps, incorporating key interest group goals as well as the official outcomes defined by the program model and funders.
+- Major risks will also be identified, including the potential harms that the program may cause. These goals and risks should be addressed in the implementation of the evaluation.
+
+#### 2) Select measures for program activities and participant goals and milestones
+
+
+- The Client Management System will be reviewed to assess whether it can generate reports for participant goals, milestones and activities.
+- Every participant should be asked what they hope to get from the services, and if feasible asked later if they achieved their goals. If necessary, the CMS will be revised to include those questions (see the Appendix for samples).
+
+#### 3) Select measures for program outcomes and interest group feedback
+- The project team will select interview and/or survey questions from a list of standard data collection tools.
+- Short-term outcome measures will be derived from an analysis of the Client Management System, supplemented by interviews with small samples of participants.
+
+#### 4) Develop, refine and test data collection tools
+- Once measures have been selected, they may need to be adapted and customized for the program or community. This step may take several months, especially if significant adaptations require pilot testing and translation.
+- As much as possible, the evaluation will use standard data collection tools and then collect user feedback throughout the project so that the tools can be improved for subsequent evaluations.
+- Exports from an existing CMS may require anonymization or commissioned reports from the organization’s internal I.T. department to protect confidentiality.
+
+### Implementation and analysis
+Assistant will now detail the implementation and analysis components for the evaluation plan for the program. For the example program Human provided, this is the implementation and analysis section Assistant can take inspiration from: 
+
+#### 1) Design reports and visualizations for monthly, quarterly and final reports
+- In this step, the project team will select the reporting formats that will be used to share results throughout the period of the evaluation project.
+- Data reports and visualizations should be designed as early as possible so that emerging findings can be shared with interest groups.
+- Standard data collection tools come with report designs that can be used immediately, including visualizations of goal achievement and qualitative results from interviews.
+
+#### 2) Collect data
+- The project team will oversee data collection, ensuring that data is being collected correctly and is of high quality.
+- Frequent interim reports will assess whether the data appears to be accurate and whether it captures feedback from defined interest groups and demographic groups.
+- If necessary, additional demographic segments may be targeted with additional interviews or financial incentives.
+
+### Communication and Discussion
+Assistant will output the section following the structure of the example, “Game On!”, a sporting event for teenagers. Please note this is just an example to show the structure coming directly from the human. All content and reasoning should relate to the current program in analysis.
+
+#### 1) Produce and discuss reports
+- Reports will be delivered frequently and discussed with appropriate staff and interest groups with a focus on recommended actions. Emerging findings may be tested with follow-up interviews or more detailed reports.
+- Notes from staff meetings will be reviewed for evidence of actions that have been taken or recommendations that have been made as a result of the reports.
+
+#### 2) Communicate and disseminate results and recommendations
+- Finally, the results and recommendations generated by the evaluation will be disseminated to a broader audience or to the key decision-makers who should be implementing changes.
+
+## Roles and meeting agendas
+Here, Assistant will list all roles and responsibilities, plus a detailed summary of the meeting agenda for the next steps. 
+
+Human provided the following example section they wrote for the “Game On!” program: 
+
+It is necessary to involve senior managers and decision-makers in the evaluation process so that the resulting information will be relevant and credible to them. They should be engaged at three stages:
+
+1. Defining objectives, roles and key interest groups at the beginning of the evaluation.
+2. Engaging with data as soon as it starts to be collected and then occasionally throughout the project.
+3. Engaging with the final recommendations and action plans near the end of the evaluation.
+
+In addition, representatives of the organization need to be involved more deeply in:
+
+1. Defining the program services and key processes.
+2. Defining project timelines and tracking quality.
+3. Configuring the CMS and refining the data collection tools.
+
+And of course members of key interest groups will be asked for input as part of the data collection activities.
+
+Following are agenda templates for these key meetings. The attendees represent the minimum roles required for a successful evaluation. Other roles may be invited depending on the needs of the project.
+
+There are four essential roles for a successful evaluation project:
+
+Sponsor (generally a senior manager who will be responsible for implementing recommendations)
+
+- Provide guidance regarding overall objectives and constraints of project
+- Liaise with the organization's senior management and manage organizational expectations and scope issues as appropriate
+- Communicate with internal and external interest groups regarding project progress
+- Remove roadblocks to project success and respond to project risks and problems as they are identified by the Project Manager or Liaison
+- Approve significant changes to the project scope, timeline, budget, or quality if required
+- Review and approve project documents and other deliverables
+
+Liaison (generally a manager at the organization reporting to the Project Sponsor)
+
+- Act as the primary contact person with the evaluator
+- Liaise with the Project Sponsor and take on their responsibilities as delegated
+- Act as a project manager from the organization’s side, e.g., scheduling meetings with program staff, negotiating with I.T. staff
+
+Project Owner (generally a senior external evaluator)
+
+- Provide project leadership for the evaluation as a whole
+- Define project methodologies and advise on strategic issues
+- Author, review and approve project documents as assigned
+- Manage and resolve team-level risks, issues, and changes
+- Remove roadblocks to project success and respond to project risks and problems as they are identified by the Project Manager or Project Sponsor
+- Review and provide detailed feedback regarding all project documents and deliverables
+
+Project Manager (generally an external evaluator reporting to the Project Owner)
+
+- Act as liaison to the organization for operational issues
+- Monitor project scope, quality, schedule, resources, costs and risks
+- Coordinate implementation of project work
+- Ensure project plan, schedule, and budget are up-to-date; detect and manage discrepancies
+- Report risks, delays and problems to Project Owner and Project Sponsor as they arise
+- Author, review and approve project documents as assigned to ensure the quality standards are met
+- Arrange and follow-up on team meetings
+- Manage and contribute to data collection, analysis and report writing
+- Provide leadership and manage work as appropriate
+
+Program staff (one or more representatives of the people who will actually implement service improvements and experience changes in their workplace)
+
+Other common roles include I.T. specialists, program participants and representatives from key constituencies.
+
+At a bare minimum, not including meetings that involve only the Project Liaison and Project Manager, the project should have four structured meetings with organizational representatives, e.g., by holding a full day workshop to combine steps 2 and 3.
+
+| Meeting Purpose | Deliverables | Minimum attendees (always includes project manager) | Notes |
+| --- | --- | --- | --- |
+| 1.Initiate the project | Draft project charter | Liaison | The agenda for this meeting is the Project Charter template. The Project Manager and Liaison fill out most of the project charter with input from Statement of Work, proposal and program documents. |
+| 2.Define objectives, roles and key interest groups | Project charter | Project Owner, Sponsor, Liaison, program staff | This meeting involves the organization’s decision-makers and program staff to build engagement in the evaluation, to decide on priorities, and to commit on how they will handle problems as they arise. The completed Project Charter is approved by the Sponsor shortly after the meeting. |
+| 3.Configure CMS and data collection tools | CMS design and approved data collection tools | Liaison, program staff | Use existing tools as much as possible. If further discussion needed offer additional meetings to subgroup |
+| 4.Track progress and troubleshoot problems | Progress report | Liaison | This can be combined with other meetings. The purpose is to discuss delays and solve problems as they arise. |
+| 5.Engage with data | Meeting notes with actions | Liaison, program staff (monthly at first, then bimonthly) | These meetings should be a recurring agenda item in regular program staff meetings, if feasible. Part of the purpose is to get staff accustomed to responding to participant feedback in their staff meetings as a normal reflective practice. Emerging conclusions should be addressed early and often so that staff get a chance to contribute to recommendations before they are presented to senior management. |
+| 6.Engage with recommendations | Revised conclusions and recommendations | Project Owner, Project Sponsor, Liaison, Project Owner, program staff | This may require multiple meetings with different interest groups, with revisions at each stage incorporating their feedback. The meetings should present only conclusions and recommendations to encourage discussion. Technical details should be available for questions and circulated to interested interest groups. |
+
+Assistant will use the context and format to customize the plan to the current program. 
+
+
+
