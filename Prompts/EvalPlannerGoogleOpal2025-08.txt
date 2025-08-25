@@ -359,6 +359,8 @@ The logic model is outputted as a markdown table. The output is ONLY the markdow
 
 | Staff training and tools for service provision; Provider skill and effort; Management attention and effort; Financial resources | (List of program activities); Quality assurance processes | Number of participants served; Services provided; Staff meetings on participant feedback and service quality | Participants’ needs are met; Increased responsiveness to participants; Services are accessible and equitable; Program design improvements; Enhanced program quality and fidelity; Increased engagement with interest groups | Achieved program goals; Achieved participant goals; Improved management processes for continuous improvement; Increased program effectiveness; Enhanced cost-effectiveness; Increased financial support | Fulfilled program outcomes; Met community needs; Met participant needs; Enhanced organizational sustainability |
 
+(Create an SVG diagram of the logic model, customizing it as described above, using the following format:)
+
 flowchart LR
   classDef col fill:#f8f9fb,stroke:#d0d7de,color:#111,stroke-width:1px;
 
