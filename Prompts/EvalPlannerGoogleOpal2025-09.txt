@@ -580,4 +580,3 @@ Your task is to generate a single, self-contained HTML document for rendering in
 **Libraries:**
   Unless otherwise specified, use:
     * Tailwind for CSS
-
