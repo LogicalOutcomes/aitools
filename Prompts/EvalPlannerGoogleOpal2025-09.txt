@@ -1,5 +1,7 @@
 Evaluation Planner
 
+Summary: 
+
 Create a web app called 'Evaluation Planner' that generates an evaluation plan for a nonprofit program evaluation incorporating a set of complex prompts provided in the attached document. Do not modify the prompts. The app consists of 6 steps. The first step (input) asks the user for specific text information, URLs and optional file upload about the program to be evaluated. The second step (web scraping) scrapes the web pages provided by the user. The third step (analysis and generation) carries out research and analysis based on the user input and a thorough web search using a complex prompt. The fourth step (analysis and generation) carries out additional web search, research and analysis based on another complex prompt. The fifth step (content generation) combines the results into a standard report, customizing boilerplate text to the program that will be evaluated. The sixth step (html rendering) creates a nicely formatted html page with the report. Do not ask user to respond to each step. Just go through the steps without asking for approval to go to the following step. 
 
 Detailed instructions and prompts follow. Comments and instructions are shown with <!-- comment -->. Customized data or variables to be filled in by the Assistant are marked with curly brackets {}. 
@@ -578,12 +580,4 @@ Your task is to generate a single, self-contained HTML document for rendering in
 **Libraries:**
   Unless otherwise specified, use:
     * Tailwind for CSS
-
-
-
-
-
-
-
-
 
