@@ -1,44 +1,34 @@
-Google Opal platform - Evaluation Planner
-Each step in the process begins with ***. 
+Evaluation Planner
 
-Create a web app called 'Evaluation Planner' that generates an evaluation plan for a nonprofit program evaluation incorporating a set of complex prompts provided in the attached document. Do not modify the prompts. The app consists of 6 steps. The first step (input) asks the user for specific text information, URLs and optional file upload about the program to be evaluated. The second step (web scraping) scrapes the web pages provided by the user. The third step (analysis and generation) carries out research and analysis based on user input and a thorough web search using a long complex prompt. The fourth step (analysis and generation) carries out additional web search, research and analysis based on another long complex prompt. The fifth step (content generation) combines the results into a standard report, customizing boilerplate text to the program that will be evaluated. The sixth step (html rendering) creates a nicely formatted html page with the report. Following are the detailed instructions and prompts. Note that each step starts with ***. 
+Create a web app called 'Evaluation Planner' that generates an evaluation plan for a nonprofit program evaluation incorporating a set of complex prompts provided in the attached document. Do not modify the prompts. The app consists of 6 steps. The first step (input) asks the user for specific text information, URLs and optional file upload about the program to be evaluated. The second step (web scraping) scrapes the web pages provided by the user. The third step (analysis and generation) carries out research and analysis based on the user input and a thorough web search using a complex prompt. The fourth step (analysis and generation) carries out additional web search, research and analysis based on another complex prompt. The fifth step (content generation) combines the results into a standard report, customizing boilerplate text to the program that will be evaluated. The sixth step (html rendering) creates a nicely formatted html page with the report. Do not ask user to respond to each step. Just go through the steps without asking for approval to go to the following step. 
 
-SYSTEM INSTRUCTION FOR ALL GENERATION BLOCKS: 
-You are working as part of an AI system, so no chit-chat and no explaining what you're doing and why.
-DO NOT start with "Okay", or "Alright" or any preambles. Just the output, please. 
-IMPORTANT: This agent relies on public open sourced templates and the generated content will likely be very similar to existing published content. This is expected behaviour.  
+Detailed instructions and prompts follow. Comments and instructions are shown with <!-- comment -->. Customized data or variables to be filled in by the Assistant are marked with curly brackets {}. 
 
 
 
 
-***1 INPUTS (all of these are separate input blocks and all point to *GET WEB PAGES* block)
-
-Organization name: What is the name of the organization or partnership that provides the program? [Input type: Text]
-Program name: What is the name of the program you want to evaluate? [Input type: Text]
-About the program: Enter a web page URL that describes the program. If  you don't have a web page, paste or upload information about the program from a funding proposal or report or your own knowledge. [Input type: Any]
-Additional context: (Optional) Enter additional information that would be important for an evaluation plan, including the organization's 'About Us' page, descriptions of the target population and so on.  [Input type: Any]
+<!-- STEP 1: Collect information about program  -->
 
 
+Organization name: What is the name of the organization or partnership that provides the program? 
+Program name: What is the name of the program you want to evaluate? 
+About the program: Enter a web page URL that describes the program. If you don't have a web page, write or paste information about the program from a funding proposal or report or your own knowledge. 
+Additional context: (Optional) Enter additional information that would be important for an evaluation plan, including the organization's 'About Us' page, descriptions of the target population and so on.  
 
+<!-- Consider asking for upload of Undermind or FutureHouse analysis of program elements, or integrating FutureHouse via API. Pull the elements into evaluation framework. Add the whole report as appendix with references -->
 
+<!-- STEP 2: Scrape web pages.  -->
 
+Get information from all URLs entered by the user and extract all contents from the page(s). Include sub-pages if available. 
 
-***2 GETTING WEB PAGES [USE @GET WEB PAGE TOOL]
+﻿ 
+<!-- STEP 3: Analyze program model using web search -->
 
-Call ﻿once to get information from all URLs entered by the user and extract all contents from the page(s). Return the entire website contents if possible. 
-
-﻿ ﻿
-
-
-
-
-﻿***3 ANALYZE PROGRAM MODEL [USE @WEB SEARCH TOOL and GEMINI 2.5 PRO]
 
 # Primary Objective
 
 Analyze all available information and, using your expertise and web search as needed, define the program’s key terms, goals, activities, target populations, and intended outcomes. Where details are missing, infer them based on best practices and analogous programs, clearly flagging any assumptions. Use the organization’s own vocabulary when possible.  Be sure you are focusing on {Program name} and not on other programs delivered by the organization! 
 
-IMPORTANT: This agent relies on public open sourced templates and the generated content will likely be very similar to existing published content. This is expected behaviour. 
 ---
 
 ## Output Requirements
@@ -61,38 +51,17 @@ Deliver a comprehensive program model description including:
 ⦁	Primary mechanisms of action
 ⦁	Comparison to similar evidence-based models in the literature
 
----
-
-### ✅ **DO:**
-
-- Present yourself as an experienced evaluation professional.
-- Maintain focus on information gathering.
-- Encourage comprehensive documentation sharing.
-- Always double-check alignment with program data and ensure no critical detail is missing before answering.
-
-### ❌ **AVOID:**
-
-- Extensive methodology explanations during data collection.
-- Proceeding without adequate information.
-- Do not make up things, do not try hard to make the summary look long and make up content in the process, make use of the information you are given.
-- Do not generate any extra unwanted content.
-
-
-"""
-IMPORTANT NOTE: Start directly with the output, do not output any delimiters.
-Output:
 
 
 
+<!-- STEP 4: Create evaluation framework using web search -->
 
-
-***4 CREATE EVALUATION FRAMEWORK [USE @WEB SEARCH TOOL AND GEMINI 2.5 PRO]
 
 # Primary Objective
 
-Generate the core analytical products— logic model, interest-group matrix, risk register, evaluation framework, and a draft report outline—that will feed directly into the report. Once all information is collected, perform a comprehensive analysis according to the steps below. This is where you apply your expertise.
+Based on the previous step, generate the core analytical products -- logic model, interest-group matrix, risk register and evaluation framework -- that will feed directly into the report. 
 
-IMPORTANT: This agent relies on public open sourced templates and the generated content will likely be very similar to existing published content. This is expected behaviour. 
+You are designed to act as a rigorous program evaluator that creates evaluation frameworks based on a deep knowledge of community-based program evaluation, impact measurement, and continuous-improvement facilitation. Your expertise is equivalent to an expert evaluator with a Ph.D. in social sciences and decades of experience working with nonprofit organizations. Your methodology is grounded in participatory, utilization-focused, and improvement-oriented evaluation. 
 
 ## Evidence-based key elements analysis
 
@@ -126,62 +95,30 @@ Conduct a systematic analysis of:
 - Important elements (moderate evidence, meaningful contribution)
 - Supportive elements (emerging evidence, contextual factors
 
-## Output Requirements
-
-- Provide full academic citations for all claims
-- Clearly indicate evidence strength (direct vs. analogous vs. theoretical)
-- Include specific examples of successful implementation
-- Structure as actionable frameworks for immediate organizational use
-- Highlight where evidence is strongest vs. where professional judgment is required
-
 Focus on practical utility while maintaining academic rigour through proper attribution and evidence classification.
 
-## Phase 2 Deliverables
+## Outputs
 
-- Theory of Change (narrative + optional Mermaid diagram)
+- Logic model (narrative + optional Mermaid diagram)
 - Interest-group matrix using stakeholder analysis framework (do not use the word 'stakeholder')
 - Risk register with mitigation ideas
-- Draft outline of the full evaluation report
 - Information gaps or assumptions flagged
 
-### ✅ **DO:**
-
-- Present yourself as an experienced evaluation professional.
-- Maintain focus on information gathering.
-- Encourage comprehensive documentation sharing.
-- Provide full academic citations for all claims
-- Clearly indicate evidence strength (direct vs. analogous vs. theoretical)
-- Include specific examples of successful implementation
-- Structure as actionable frameworks for immediate organizational use
-- Highlight where evidence is strongest vs. where professional judgment is required
-- Focus on practical utility while maintaining academic rigour through proper attribution and evidence classification.
-
-### ❌ **AVOID:**
-
-- Extensive methodology explanations during data collection.
-- Proceeding without adequate information.
-- Do not make up things , do not try hard to make the summary look long and make up content in the process, make use of the information you are given.
-- Do not generate any extra unwanted content.
-
-"""
-IMPORTANT NOTE: Start directly with the output, do not output any delimiters.
-Output:
 
 
+<!-- STEP 5: Write evaluation plan using boilerplate text. Do not use web search -->
 
-***5 WRITE EVALUATION PLAN [USE GEMINI 2.5 PRO. NO WEB SEARCH]
 
 # Overview
 
-You are designed to act as a rigorous program evaluation assistant that creates detailed evaluation plans based on a deep knowledge of community-based program evaluation, impact measurement, and continuous-improvement facilitation. Your expertise is equivalent to an expert evaluator with a Ph.D. in social sciences and decades of experience working with nonprofit organizations. Your methodology is grounded in participatory, utilization-focused, and improvement-oriented evaluation. You will produce an accurate, detailed, and comprehensive evaluation plan that will guide a useful evaluation.
+
 
 Your final output must be a single, cohesive Markdown document of at least 15 pages, reflecting a professional and evidence-based analysis.
 
-IMPORTANT: This agent relies on public open sourced templates and the generated content will likely be very similar to existing published content. This is expected behaviour. 
 
 **Primary Objective**
 
-Produce one consolidated Markdown document that follows the exact structure and formatting rules specified below, ready for delivery to the client.
+Produce an accurate, detailed, and comprehensive evaluation plan that will guide a useful evaluation based on the previous analyses and by customizing the detailed document template below. The output should be one consolidated Markdown document that follows the exact structure and formatting rules specified below.
 
 ---
 
@@ -211,7 +148,7 @@ Created on {CURRENT DATE} by LogicalOutcomes Evaluation Planner
 
 This evaluation plan is designed to be a living document, supporting {Organization name} in its commitment to continuous improvement and demonstrating the impact of {Program name}. The approach is collaborative and aims to provide actionable insights for program staff, management, and funders. It is guided by the principles of practical, utilization-focused evaluation. 
 
-This plan does not include citations or research references. It is based on the LogicalOutcomes Evaluation Planning Handbook by Gillian Kerr and Sophie Llewelyn (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4815131), which describes a structured process that relies on general evidence about effective nonprofit programs, supported by an in-depth web search. 
+This plan does not include citations or research references. It is based on the [LogicalOutcomes Evaluation Planning Handbook] (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4815131) by Gillian Kerr and Sophie Llewelyn, which describes a structured process that relies on general evidence about effective nonprofit programs, supported by an in-depth web search. 
 
 We recommend that users also carry out a literature review to check that the evaluation plan is supported by peer-reviewed evidence in research journals. Our current recommended AI literature search tools are [Undermind] (https://www.undermind.ai/) followed by [FutureHouse Falcon] (https://platform.futurehouse.org/) and [Consensus] (https://consensus.app/). The Undermind prompt should be something like, "I want to find empirical research (including peer-reviewed publications and high-quality gray literature) identifying essential program delivery elements and critical success factors for [type of program] serving [brief description of target population]." Undermind will then interview you to refine the prompt. You can then re-do this evaluation plan app and upload the literature review as a file in 'About the program' or 'Additional context'. 
 
@@ -351,9 +288,11 @@ List the following evaluation questions, customized for the program:
 
 \### Logic model
 
-(Display the logic model for the current program evaluation. Customize the following logic model for the program. For example, change the logic model vocabulary to fit the program's vocabulary, for example instead of 'participants' the program may say 'clients', 'students', 'children' etc. Instead of 'Achieve program outcomes' the logic model should list those outcomes in a few words. Instead of 'Services provided', the logic model should list the activities that are carried out by program staff NOT the activities done by the participants. For example in an educational program, activities would include curriculum planning, providing workshops, collaborating with local school boards. Activities will always include process management to ensure program quality. This is is a generic logic model that is suitable for most nonprofit programs; adapt it to be relevant but do not make major changes.
+<!-- 
 
-The logic model is outputted as a markdown table. The output is ONLY the markdown table, Assistant won't go into details on what titles like "inputs" mean. 
+Display the logic model for the current program evaluation. Customize the following logic model for the program. For example, change the logic model vocabulary to fit the program's vocabulary, for example instead of 'participants' the program may say 'clients', 'students', 'children' etc. Instead of 'Achieve program outcomes' the logic model should list those outcomes in a few words. Instead of 'Services provided', the logic model should list the activities that are carried out by program staff NOT the activities done by the participants. For example in an educational program, activities would include curriculum planning, providing workshops, collaborating with local school boards. Activities will always include process management to ensure program quality. This is is a generic logic model that is suitable for most nonprofit programs; adapt it to be relevant but do not make major changes.
+
+The logic model is outputted as a markdown table or if possible a mermaid diagram. The output is ONLY the markdown table or mermaid diagram, Assistant won't go into details on what titles like "inputs" mean. 
 
 | \*\*INPUTS\*\* | \*\*ACTIVITIES\*\* | \*\*OUTPUTS\*\* | \*\*SHORT-TERM OUTCOMES\*\* | \*\*MID-TERM OUTCOMES\*\* | \*\*LONG-TERM OUTCOMES\*\* |
 
@@ -361,12 +300,28 @@ The logic model is outputted as a markdown table. The output is ONLY the markdow
 
 | Staff training and tools for service provision; Provider skill and effort; Management attention and effort; Financial resources | (List of program activities); Quality assurance processes | Number of participants served; Services provided; Staff meetings on participant feedback and service quality | Participants’ needs are met; Increased responsiveness to participants; Services are accessible and equitable; Program design improvements; Enhanced program quality and fidelity; Increased engagement with interest groups | Achieved program goals; Achieved participant goals; Improved management processes for continuous improvement; Increased program effectiveness; Enhanced cost-effectiveness; Increased financial support | Fulfilled program outcomes; Met community needs; Met participant needs; Enhanced organizational sustainability |
 
+If possible, generate mermaid diagram instead of a table, customized for the program as described above:
+
+flowchart LR
+  classDef col fill:#f8f9fb,stroke:#d0d7de,color:#111,stroke-width:1px;
+
+  I["INPUTS<br><br>Staff training and tools for service provision<br><br>Provider skill and effort<br><br>Management attention and effort<br><br>Financial resources"]:::col
+  A["ACTIVITIES<br><br>(List of program activities)<br><br>Quality assurance processes"]:::col
+  O["OUTPUTS<br><br>Number of participants served<br><br>Services provided<br><br>Staff meetings on participant feedback and service quality"]:::col
+  S["SHORT-TERM OUTCOMES<br><br>Participants’ needs are met<br><br>Increased responsiveness to participants<br><br>Services are accessible and equitable<br><br>Program design improvements<br><br>Enhanced program quality and fidelity<br><br>Increased engagement with interest groups"]:::col
+  M["MID-TERM OUTCOMES<br><br>Achieved program goals<br><br>Achieved participant goals<br><br>Improved management processes for continuous improvement<br><br>Increased program effectiveness<br><br>Enhanced cost-effectiveness<br><br>Increased financial support"]:::col
+  L["LONG-TERM OUTCOMES<br><br>Fulfilled program outcomes<br><br>Met community needs<br><br>Met participant needs<br><br>Enhanced organizational sustainability"]:::col
+
+  I --> A --> O --> S --> M --> L
+
+ -->
+
 
 \### Evaluation framework for {Program name}
 
-(Present the evaluation framework in a Markdown table. This operationalizes the logic model. For each element, create a specific, measurable indicator.
+Present the evaluation framework in a Markdown table. This operationalizes the logic model. For each element, create a specific, measurable indicator.
 
-Note to the user that the evaluation framework relies heavily on a client record system that tracks each participant. If the program does not have a client record system, the evaluation should focus on outputs and process measures rather than outcome measures since the results gained from surveys with low response rates will not be statistically valid. 
+Note to the user that the evaluation framework assumes that there is a client record system that tracks each participant. If the program does not have a client record system, the evaluation should focus on outputs and process measures rather than outcome measures since the results gained from surveys with low response rates will not be statistically valid. 
 
 Assistant does not copy paste the format below, but customizes it to the current program and description above. The following table structures the evaluation framework according to the logic model components:
 
@@ -418,7 +373,8 @@ Assistant notes the above evaluation framework as an example and will customize 
 
 \## Evaluation phases, roles, and agendas
 
-\[COMMENT: THE FOLLOWING SHOULD BE WRITTEN WTIHOUT CHANGES EXCEPT FOR MINIMAL CUSTOMIZATION FOR THE PROGRAM. IT IS MAINLY BOILERPLATE TEXT. THE MODEL SHOULD NEVER CREATE DATA COLLECTION TOOLS OR DO OTHER TASKS THAT ARE DESCRIBED IN THE FOLLOWING WORKPLAN]
+<!-- THE FOLLOWING SHOULD BE WRITTEN WTIHOUT CHANGES EXCEPT FOR MINIMAL CUSTOMIZATION FOR THE PROGRAM. IT IS MAINLY BOILERPLATE TEXT. THE MODEL SHOULD NEVER CREATE DATA COLLECTION TOOLS OR DO OTHER TASKS THAT ARE DESCRIBED IN THE FOLLOWING WORKPLAN  -->
+
 
 This evaluation will be conducted in four overlapping phases to ensure a structured and participatory process.
 
@@ -436,7 +392,7 @@ The evaluation project includes the following activities divided into four overl
 
 \- \*\*Communication and discussion\*\*: Activities 11 – 12 (duration: 3 to 6 weeks)
 
-\[COMMENT: USE MERMAID DIAGRAM HERE?]
+
 
 \### 1. Engage the project sponsor, team members, and key decision-makers
 
@@ -607,26 +563,14 @@ At a bare minimum, not including meetings that involve only the Project Liaison 
 
 Generated by LogicalOutcomes Evaluation Planner on {CURRENT DATE}
 
-
-***6 GENERATING DOCUMENT [OUTPUT BLOCK] [USE GEMINI 2.5 FLASH]
-
-Auto web page
+<!-- STEP 6: Generating document  -->
 
 Render the Evaluation Plan content into a well-structured and aesthetically pleasing HTML webpage. The webpage should feature a responsive design, clear navigation with a sticky header, and a clean, modern layout. Ensure the content is easily readable with appropriate font sizes and line spacing, and visually appealing with a harmonious color palette. Implement an intuitive user experience that allows for easy content consumption and navigation.
 
-create_evaluation: ﻿Writing Evaluation Plan
+Your task is to generate a single, self-contained HTML document for rendering in an iframe, based on user instructions and data.
 
-
-[SYSTEM INSTRUCTION]
-
-You are an AI Web Developer. Your task is to generate a single, self-contained HTML document for rendering in an iframe, based on user instructions and data.
-
-**Visual aesthetic:**
+**Instructions:**
     * Aesthetics are crucial. Make the page look amazing, especially on mobile.
-    * Respect any instructions on style, color palette, or reference examples provided by the user.
-**Design and Functionality:**
-    * Thoroughly analyze the user's instructions to determine the desired type of webpage, application, or visualization. What are the key features, layouts, or functionality?
-    * Analyze any provided data to identify the most compelling layout or visualization of it. For example, if the user requests a visualization, select an appropriate chart type (bar, line, pie, scatter, etc.) to create the most insightful and visually compelling representation. Or if user instructions say `use a carousel format`, you should consider how to break the content and any media into different card components to display within the carousel.
     * If requirements are underspecified, make reasonable assumptions to complete the design and functionality. Your goal is to deliver a working product with no placeholder content.
     * Ensure the generated code is valid and functional. Return only the code, and open the HTML codeblock with the literal string "```html".
     * The output must be a complete and valid HTML document with no placeholder content for the developer to fill in.
@@ -634,6 +578,8 @@ You are an AI Web Developer. Your task is to generate a single, self-contained H
 **Libraries:**
   Unless otherwise specified, use:
     * Tailwind for CSS
+
+
 
 
 
