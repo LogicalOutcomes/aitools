@@ -101,7 +101,7 @@ Focus on practical utility while maintaining academic rigour through proper attr
 
 ## Outputs
 
-- Logic model (narrative + optional Mermaid diagram)
+- Logic model
 - Interest-group matrix using stakeholder analysis framework (do not use the word 'stakeholder')
 - Risk register with mitigation ideas
 - Information gaps or assumptions flagged
@@ -115,7 +115,7 @@ Focus on practical utility while maintaining academic rigour through proper attr
 
 
 
-Your final output must be a single, cohesive Markdown document of at least 15 pages, reflecting a professional and evidence-based analysis.
+Your final output must be a single, cohesive Markdown document of at least 10 pages, reflecting a professional and evidence-based analysis.
 
 
 **Primary Objective**
@@ -290,11 +290,9 @@ List the following evaluation questions, customized for the program:
 
 \### Logic model
 
-<!-- 
-
 Display the logic model for the current program evaluation. Customize the following logic model for the program. For example, change the logic model vocabulary to fit the program's vocabulary, for example instead of 'participants' the program may say 'clients', 'students', 'children' etc. Instead of 'Achieve program outcomes' the logic model should list those outcomes in a few words. Instead of 'Services provided', the logic model should list the activities that are carried out by program staff NOT the activities done by the participants. For example in an educational program, activities would include curriculum planning, providing workshops, collaborating with local school boards. Activities will always include process management to ensure program quality. This is is a generic logic model that is suitable for most nonprofit programs; adapt it to be relevant but do not make major changes.
 
-The logic model is outputted as a markdown table or if possible a mermaid diagram. The output is ONLY the markdown table or mermaid diagram, Assistant won't go into details on what titles like "inputs" mean. 
+The logic model is outputted as a markdown table or a diagram. The output is ONLY the markdown table or diagram, Assistant won't go into details on what titles like "inputs" mean. 
 
 | \*\*INPUTS\*\* | \*\*ACTIVITIES\*\* | \*\*OUTPUTS\*\* | \*\*SHORT-TERM OUTCOMES\*\* | \*\*MID-TERM OUTCOMES\*\* | \*\*LONG-TERM OUTCOMES\*\* |
 
@@ -302,21 +300,6 @@ The logic model is outputted as a markdown table or if possible a mermaid diagra
 
 | Staff training and tools for service provision; Provider skill and effort; Management attention and effort; Financial resources | (List of program activities); Quality assurance processes | Number of participants served; Services provided; Staff meetings on participant feedback and service quality | Participants’ needs are met; Increased responsiveness to participants; Services are accessible and equitable; Program design improvements; Enhanced program quality and fidelity; Increased engagement with interest groups | Achieved program goals; Achieved participant goals; Improved management processes for continuous improvement; Increased program effectiveness; Enhanced cost-effectiveness; Increased financial support | Fulfilled program outcomes; Met community needs; Met participant needs; Enhanced organizational sustainability |
 
-If possible, generate mermaid diagram instead of a table, customized for the program as described above:
-
-flowchart LR
-  classDef col fill:#f8f9fb,stroke:#d0d7de,color:#111,stroke-width:1px;
-
-  I["INPUTS<br><br>Staff training and tools for service provision<br><br>Provider skill and effort<br><br>Management attention and effort<br><br>Financial resources"]:::col
-  A["ACTIVITIES<br><br>(List of program activities)<br><br>Quality assurance processes"]:::col
-  O["OUTPUTS<br><br>Number of participants served<br><br>Services provided<br><br>Staff meetings on participant feedback and service quality"]:::col
-  S["SHORT-TERM OUTCOMES<br><br>Participants’ needs are met<br><br>Increased responsiveness to participants<br><br>Services are accessible and equitable<br><br>Program design improvements<br><br>Enhanced program quality and fidelity<br><br>Increased engagement with interest groups"]:::col
-  M["MID-TERM OUTCOMES<br><br>Achieved program goals<br><br>Achieved participant goals<br><br>Improved management processes for continuous improvement<br><br>Increased program effectiveness<br><br>Enhanced cost-effectiveness<br><br>Increased financial support"]:::col
-  L["LONG-TERM OUTCOMES<br><br>Fulfilled program outcomes<br><br>Met community needs<br><br>Met participant needs<br><br>Enhanced organizational sustainability"]:::col
-
-  I --> A --> O --> S --> M --> L
-
- -->
 
 
 \### Evaluation framework for {Program name}
