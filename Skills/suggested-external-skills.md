@@ -1,12 +1,8 @@
 # LogicalOutcomes Suggested External Skills
 
-This is LogicalOutcomes's short list of **outside skills we've looked at and approved** — skills built and kept by other people that are worth using at LO. It exists so we can benefit from good work elsewhere without copying it (copies go stale) and without sending people into someone's whole repository of hundreds of unrelated skills.
+These are a few of the external skills that we sometimes use in our work. It exists so we can benefit from good work elsewhere without copying it (copies go stale) and without sending people into someone's whole repository of hundreds of unrelated skills.
 
-This file lives in the `aitools` repo, in the `Skills/` folder, next to LO's own skills list. It is the single source of truth — edit it here to add or retire an approved skill, and the change takes effect everywhere with no repackaging.
-
-**How this is used:** when someone asks for help and a skill on this list fits, Claude recommends it and handles fetching it from the source. Nobody has to run anything.
-
-**How to maintain it (plain version):** to add a skill, look at it, and if it's good and right for LO, add a few lines below — its name, what it does, and the link. To retire one, delete its lines. Keep the list short and deliberate; that's the point. When in doubt about whether something belongs, leave it off.
+**How to maintain it (plain version):** to add a skill, add a few lines below — its name, what it does, and the link. To retire one, delete its lines. Keep the list short and deliberate; that's the point. When in doubt about whether something belongs, leave it off.
 
 Each entry below has been reviewed and approved for LO use. Last reviewed: 2026-06-14.
 
