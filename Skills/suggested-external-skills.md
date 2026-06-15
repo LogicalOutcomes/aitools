@@ -1,6 +1,6 @@
-# LO Approved External Skills
+# LogicalOutcomes Suggested External Skills
 
-This is LO's short list of **outside skills we've looked at and approved** — skills built and kept by other people that are worth using at LO. It exists so we can benefit from good work elsewhere without copying it (copies go stale) and without sending people into someone's whole repository of hundreds of unrelated skills.
+This is LogicalOutcomes's short list of **outside skills we've looked at and approved** — skills built and kept by other people that are worth using at LO. It exists so we can benefit from good work elsewhere without copying it (copies go stale) and without sending people into someone's whole repository of hundreds of unrelated skills.
 
 This file lives in the `aitools` repo, in the `Skills/` folder, next to LO's own skills list. It is the single source of truth — edit it here to add or retire an approved skill, and the change takes effect everywhere with no repackaging.
 
