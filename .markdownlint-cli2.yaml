@@ -1,0 +1,41 @@
+# markdownlint-cli2 configuration for the LogicalOutcomes aitools repo.
+# Run with:  npx markdownlint-cli2 "**/*.md"
+#
+# SKILL.md and reference files are long-form instruction sheets and reusable
+# templates. They intentionally use long lines, inline HTML callouts, tables,
+# emphasis as run-in labels, repeated sub-headings (e.g. "Books" under several
+# citation styles), and multiple top-level headings (template files where each
+# block is copied independently). We disable the rules that fight that style and
+# keep the rules that catch real defects (untagged code fences, bare URLs,
+# missing blank lines around headings and lists, broken tables).
+
+config:
+  # --- Disabled: incompatible with the SKILL.md / template writing style ---
+  MD013: false   # line-length — descriptions and notes run long by design
+  MD033: false   # inline HTML — we use <!-- comments --> and callout markup
+  MD041: false   # first-line-heading — files open with YAML front matter
+  MD060: false   # table-column-style
+  MD029: false   # ol-prefix — ordered lists are not always 1-sequential
+  MD036: false   # no-emphasis-as-heading — bold lead-ins are used as run-in labels
+  MD051: false   # link-fragments — not all anchors are resolvable cross-tool
+  MD025: false   # single-h1 — template files contain several standalone H1 blocks
+  MD026: false   # trailing-punctuation-in-heading — headings like "We DO:" are intentional
+  MD037: false   # spaces-in-emphasis — '_' is used as a fill-in placeholder, not emphasis
+
+  # MD024 (duplicate headings): allow identical headings under different parents
+  # (e.g. "Journal Articles" / "Books" repeated across citation styles).
+  MD024:
+    siblings_only: true
+
+  # --- Kept enabled (listed explicitly for clarity / future-proofing) ---
+  MD040: true    # fenced-code-language — every code fence must declare a language
+  MD034: true    # no-bare-urls — URLs must be in <...> or links
+  MD022: true    # blanks-around-headings
+  MD032: true    # blanks-around-lists
+
+globs:
+  - "**/*.md"
+
+ignores:
+  - "Deprecated/**"
+  - ".git/**"
