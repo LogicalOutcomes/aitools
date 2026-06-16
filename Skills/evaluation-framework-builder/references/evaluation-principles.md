@@ -8,9 +8,6 @@ editor: markdown
 dateCreated: 2026-01-21T01:18:02.345Z
 ---
 
-> **This is a DRAFT document.** It is published for review purposes and has not been officially approved yet.
-
-
 # Evaluation Principles
 
 This document explains *why* we evaluate the way we do at LogicalOutcomes. For *how* to do it, see the [Evaluation Process Guide](evaluation-services-guide.md).

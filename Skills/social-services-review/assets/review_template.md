@@ -329,7 +329,7 @@ Organization Name. (Year). *Title of report*. Publisher (if different). URL
 
 | Section | Item | Reported? | Page |
 |---------|------|-----------|------|
-| [Complete PRISMA 2020 or PRISMA-ScR checklist] |
+| [Complete PRISMA 2020 or PRISMA-ScR checklist] | | | |
 
 ### Appendix C: Excluded Sources with Reasons
 

@@ -1,7 +1,5 @@
 > **Template:** an adaptable copy bundled with the project-starter skill. Replace bracketed placeholders and align it with your own organization's policies before use.
 
-> **This is a DRAFT document.** It is published for review purposes and has not been officially approved yet.
-
 # Project Roles
 
 These templates use three core project roles to ensure clear accountability and smooth delivery. Adapt role titles, responsibilities, and compensation details to match your organization's structure and policies.

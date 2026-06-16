@@ -24,7 +24,6 @@ Evaluation plans involving client, participant, donor, or employee data may impl
 
 Operational defaults: de-identify before analysis; never paste identifiable data into a general-purpose AI assistant; confirm that participants provided informed consent for this use of their information; check that your use of AI tools is consistent with any ethics approval in place.
 
-
 ## Workflow
 
 Gather information → research → generate plan → review with user → deliver. Adapt to what the user brings:

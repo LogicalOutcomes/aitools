@@ -1,7 +1,5 @@
 > **Template:** an adaptable copy bundled with the project-starter skill. Replace bracketed placeholders and align it with your own organization's policies before use.
 
-> **This is a DRAFT document.** It is published for review purposes and has not been officially approved yet.
-
 Upon approval of the Project Charter, the Project Manager will create an e-mail using this template, for each team member. Each email should be discussed and approved with the Project Sponsor before sending. Sent emails serve as project-specific subcontracts and should be saved in your project files.
 
 FOR PROJECT MANAGER/PROJECT OWNER ROLES, see root folder for PM/PO role descriptions.

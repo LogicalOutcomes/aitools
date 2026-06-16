@@ -271,7 +271,7 @@ As an example of questions that might be used in service delivery, consider the 
 
 > **Social connection:** How often do you see or talk to people that you care about and feel close to (for example: talking to friends on the phone, visiting friends or family, going to church or club meetings)?
 > *Less than once a week · 1 or 2 times a week · 3 to 5 times a week · 6 or more times a week · I choose not to answer this question*
-
+>
 > **Stress:** Stress is when someone feels tense, nervous, anxious or can't sleep at night because their mind is troubled — how stressed are you?
 > *Not at all · A little bit · Somewhat · Quite a bit · Very much · I choose not to answer this question*
 

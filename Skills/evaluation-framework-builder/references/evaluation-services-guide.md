@@ -8,8 +8,6 @@ editor: markdown
 dateCreated: 2026-01-21T01:18:06.014Z
 ---
 
-> **This is a DRAFT document.** It is published for review purposes and has not been officially approved yet.
-
 # Evaluation Process Guide
 
 This guide covers **how** to run evaluation projects at LogicalOutcomes. For the **why** behind our approach, see [Evaluation Principles](evaluation-principles.md). For the canonical plan structure, see [plan-structure.md](plan-structure.md).

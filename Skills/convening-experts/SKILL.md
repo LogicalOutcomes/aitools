@@ -247,8 +247,6 @@ The panel exists to push past what the user could get from one capable hire — 
 - **In hard domains** (security, statistics, software, finance, law), the bar is technical correctness an actual domain expert would not catch out. Get the mechanism, the legal provision, the statistical assumption exactly right. A plausible-but-wrong claim (e.g., "PHIPA bars cross-border storage" — it doesn't; it's an accountability regime) is worse than no claim.
 - **Avoid the predictable.** If an expert's contribution is what a reader could already guess that role would say, it adds nothing. The value is in the non-obvious — the counterintuitive-but-correct point, the concession against interest, the disagreement that *changes* the recommendation. When grounding a claim in current facts, figures, or law, verify rather than reciting from memory.
 
-
-
 The worked panels in `examples/` are the standard to match. Each anchors its claims to the
 best available evidence, states evidence quality honestly (RCT vs. single-site vs. survey),
 forces the disagreement onto *empirical* questions rather than competing values, and ends

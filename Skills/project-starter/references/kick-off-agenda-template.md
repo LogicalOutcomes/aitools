@@ -1,7 +1,5 @@
 > **Template:** an adaptable copy bundled with the project-starter skill. Replace bracketed placeholders and align it with your own organization's policies before use.
 
-> **This is a DRAFT document.** It is published for review purposes and has not been officially approved yet.
-
 # Project Kick-Off Agenda
 
 Before the meeting, copy the content of this page into the Outlook appointment sent to all invitees. After the meeting, copy the notes into an email message to the client liaison for their records. No need to prettify, and no need to write detailed notes. Any changes to the Charter will be captured in the charter itself and does not need to be written here.

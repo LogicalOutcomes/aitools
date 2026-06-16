@@ -3,7 +3,7 @@
 # Charter Example 1: Technology Roadmap
 
 > **Note:** This example is based on a real project with names and details changed to protect client confidentiality.
-
+>
 > **CHARTER PURPOSE** — The project charter forms the basis of the relationship between the project team, the Project Sponsor and the working group that has been set up to oversee the implementation of the project and the achievement of its objectives.
 
 *This is a completed example showing how to fill in the [Project Charter Template](project-charter-template.md).*
