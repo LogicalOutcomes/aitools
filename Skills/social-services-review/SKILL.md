@@ -17,9 +17,22 @@ Conduct rigorous literature reviews and evidence syntheses tailored for non-prof
 
 The skill supports multiple review types (systematic, scoping, rapid, realist) and produces outputs that serve mixed audiences: funders reviewing grant applications, practitioners designing programs, and policy makers weighing interventions.
 
+## Canadian Privacy Triage
+
+**This is not legal advice — confirm with your own privacy or legal contact.**
+
+Reviews involving client, participant, or community data may implicate Canadian privacy law. Which law applies depends on your organization type, information type, and whether data crosses a border:
+
+- **PIPEDA** (federal) applies to private-sector organizations engaged in commercial activity involving personal information. It does **not** generally apply to non-profits and charities **unless** they engage in commercial activity. See [PIPEDA in brief](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/) and [Privacy laws in Canada](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/02_05_d_15/) (OPC).
+- **Provincial privacy laws** (e.g., PHIPA in Ontario for health information) and contractual obligations may apply regardless.
+- **TCPS2 research ethics** applies when collecting or synthesizing data about human participants for research purposes.
+
+De-identify before analysis; never paste identifiable data into a general-purpose AI assistant.
+
 ## When to Use This Skill
 
 Use this skill when:
+
 - Conducting a literature review on a social services intervention or program model
 - Building an evidence base for a grant proposal or funding application
 - Performing a scoping review or environmental scan in community health or social services
@@ -29,7 +42,36 @@ Use this skill when:
 - Synthesizing both peer-reviewed and grey literature for a Canadian or North American context
 - Preparing evidence briefs for boards, funders, or government stakeholders
 
-## Core Workflow
+## Low-Resource Rapid Evidence Scan (for small orgs without database access)
+
+Many non-profits lack librarians, paid database subscriptions, and systematic-review budgets. This lighter path produces useful, honest evidence in 2–4 hours using only free and open sources. Use it explicitly when the full systematic review is impractical.
+
+**Scope and honesty:** Label the output a **Rapid Evidence Scan**, not a systematic review. State the time invested, sources searched, and key limitations in the report.
+
+**Free and open sources to search:**
+
+1. Google Scholar — broad coverage; use `site:` operators for Canadian sources (e.g., `site:canada.ca`)
+2. PubMed/MEDLINE (free at pubmed.ncbi.nlm.nih.gov) — health and public health evidence
+3. Campbell Collaboration (campbellcollaboration.org) — free systematic reviews on social interventions
+4. Cochrane Library — free systematic review abstracts
+5. Government and grey literature — canada.ca publications, provincial health authority sites, Statistics Canada, CMHC, PHAC, CIHR (all free)
+6. Sector hubs — homelesshub.ca, ccsa.ca, mentalhealthcommission.ca, evaluationcanada.ca
+7. Google Advanced Search with `filetype:pdf` and `site:` operators for organizational reports
+
+**Time-boxed method (adapt to your deadline):**
+
+1. Define one clear question (PICO or plain language — 10 min)
+2. Run 4–6 targeted Google Scholar and PubMed searches, noting search strings (30–45 min)
+3. Skim titles/abstracts; pull 8–15 relevant sources (20–30 min)
+4. Search 2–3 sector hubs and one government source for grey literature (20–30 min)
+5. Extract key findings into a simple table: Source | Population | Intervention | Key Finding | Quality note (30–45 min)
+6. Write a 1–2 page synthesis with explicit limitations (30–45 min)
+
+**Quality note:** always flag that subscription databases (PsycINFO, CINAHL, Social Work Abstracts) were not searched and that findings may miss important evidence. Recommend a fuller search if the stakes are high (policy decisions, major funding).
+
+---
+
+## Core Workflow (Full Systematic Review)
 
 Literature reviews in social services follow a structured but flexible process. The phases below can be adapted depending on review type (systematic, scoping, rapid, or realist).
 
@@ -149,6 +191,7 @@ These are essential for any Canadian-focused review. See `references/database_st
 Grey literature is critical in social services — program evaluations, government reports, and community organization publications contain evidence that never appears in academic journals. Budget significant search time for this.
 
 **Types of grey literature to search:**
+
 - Government reports (federal, provincial/state, municipal)
 - Program evaluation reports from non-profit organizations
 - Reports from research institutes and think tanks
@@ -176,6 +219,7 @@ Grey literature is critical in social services — program evaluations, governme
 | Tamarack Institute | Community change, poverty reduction | tamarackcommunity.ca |
 
 **Grey literature search tips:**
+
 - Use Google Advanced Search with site-specific operators (e.g., `site:canada.ca "homeless youth" evaluation`)
 - Search organizational websites directly — many don't index well in Google
 - Check reference lists of known reports for additional sources
@@ -185,27 +229,22 @@ Grey literature is critical in social services — program evaluations, governme
 #### Document Search Parameters
 
 For each database or source searched, document:
+
 ```markdown
 ## Search Strategy
 
 ### Database: PsycINFO
-- **Date searched**: 2026-04-10
-- **Date range**: 2015-01-01 to 2026-04-10
-- **Search string**:
-  ```
-  (DE "Homeless" OR DE "Homelessness") AND
-  (DE "Adolescents" OR DE "Youth" OR "young people") AND
-  ("urban" OR "city" OR "metropolitan") AND
-  (DE "Intervention" OR "program" OR "service")
-  ```
+- **Date searched**: [YYYY-MM-DD]
+- **Date range**: [start] to [end]
+- **Search string**: [exact string used]
 - **Filters**: English or French, Peer-reviewed
-- **Results**: 187 articles
+- **Results**: [N] articles
 
 ### Grey Literature: Canadian Observatory on Homelessness
-- **Date searched**: 2026-04-10
-- **Search terms**: "youth" AND "urban" AND ("intervention" OR "program")
+- **Date searched**: [YYYY-MM-DD]
+- **Search terms**: [terms]
 - **Method**: Website search + browse by topic
-- **Results**: 23 reports
+- **Results**: [N] reports
 ```
 
 ### Phase 3: Screening and Selection
@@ -223,7 +262,8 @@ For each database or source searched, document:
    - Document specific reasons for exclusion
 
 4. **Create PRISMA Flow Diagram**:
-   ```
+
+   ```text
    Academic databases: n = [X]
    Grey literature sources: n = [Y]
    ├─ Total records: n = [X+Y]
@@ -285,6 +325,7 @@ For each database or source searched, document:
    Social services syntheses should integrate evidence from both academic and grey literature, noting the source type where relevant.
 
    Example structure:
+
    ```markdown
    #### 3.4.1 Theme: Housing First Approaches for Youth
 
@@ -343,6 +384,7 @@ For each database or source searched, document:
 All citations must be verified for accuracy before finalizing.
 
 1. **Verify DOIs** for peer-reviewed sources:
+
    ```bash
    python scripts/verify_citations.py my_review.md
    ```
@@ -362,6 +404,7 @@ All citations must be verified for accuracy before finalizing.
 1. **Generate the review** using the template in `assets/review_template.md`
 
 2. **Generate PDF** if needed:
+
    ```bash
    python scripts/generate_pdf.py my_review.md \
      --citation-style apa \
@@ -414,28 +457,31 @@ For detailed search strategies, see `references/database_strategies.md`. Quick r
 | Disability | disability, accessibility, inclusion, accommodation |
 | Aging | older adult*, senior*, aging, elder care, long-term care |
 
-## Integration with Other Skills
+## Bundled Scripts
 
-This skill bundles its own copies of these scripts (no separate literature-review skill is required):
+This skill bundles these helper scripts — no separate literature-review skill is required:
+
 - `scripts/verify_citations.py` — Verify DOIs and format citations
 - `scripts/generate_pdf.py` — Convert markdown to professional PDF
-- `scripts/search_databases.py` — Process and deduplicate search results
+- `scripts/parse_exported_results.py` — Process and deduplicate exported search results (note: this script processes results you export from a database; it does not search databases directly)
 
 ## Resources
 
 ### Bundled Resources
+
 - `assets/review_template.md` — Review template adapted for social services
 - `references/citation_styles.md` — Citation formatting guide (APA, Vancouver, etc.)
 - `references/database_strategies.md` — Detailed database search strategies for social science and Canadian sources
 
 ### External Resources
-- PRISMA (Systematic Reviews): http://www.prisma-statement.org/
-- PRISMA-ScR (Scoping Reviews): https://www.equator-network.org/reporting-guidelines/prisma-scr/
-- Campbell Collaboration: https://www.campbellcollaboration.org/
-- Cochrane Handbook: https://training.cochrane.org/handbook
-- CASP Checklists: https://casp-uk.net/casp-tools-checklists/
-- MMAT (Mixed Methods): https://mixedmethodsappraisaltoolpublic.pbworks.com/
-- AACODS (Grey Literature): https://dspace.flinders.edu.au/jspui/bitstream/2328/3326/4/AACODS_Checklist.pdf
-- RE-AIM Framework: https://re-aim.org/
-- Canadian Observatory on Homelessness: https://www.homelesshub.ca/
-- Canadian Evaluation Society: https://evaluationcanada.ca/
+
+- PRISMA (Systematic Reviews): <http://www.prisma-statement.org/>
+- PRISMA-ScR (Scoping Reviews): <https://www.equator-network.org/reporting-guidelines/prisma-scr/>
+- Campbell Collaboration: <https://www.campbellcollaboration.org/>
+- Cochrane Handbook: <https://training.cochrane.org/handbook>
+- CASP Checklists: <https://casp-uk.net/casp-tools-checklists/>
+- MMAT (Mixed Methods): <https://mixedmethodsappraisaltoolpublic.pbworks.com/>
+- AACODS (Grey Literature): <https://dspace.flinders.edu.au/jspui/bitstream/2328/3326/4/AACODS_Checklist.pdf>
+- RE-AIM Framework: <https://re-aim.org/>
+- Canadian Observatory on Homelessness: <https://www.homelesshub.ca/>
+- Canadian Evaluation Society: <https://evaluationcanada.ca/>

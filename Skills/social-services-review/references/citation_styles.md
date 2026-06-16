@@ -6,13 +6,13 @@ This document provides detailed guidelines for formatting citations in various a
 
 ### Journal Articles
 
-**Format**: Author, A. A., Author, B. B., & Author, C. C. (Year). Title of article. *Title of Periodical*, *volume*(issue), page range. https://doi.org/xx.xxx/yyyy
+**Format**: Author, A. A., Author, B. B., & Author, C. C. (Year). Title of article. *Title of Periodical*, *volume*(issue), page range. <https://doi.org/xx.xxx/yyyy>
 
-**Example**: Smith, J. D., Johnson, M. L., & Williams, K. R. (2023). Machine learning approaches in drug discovery. *Nature Reviews Drug Discovery*, *22*(4), 301-318. https://doi.org/10.1038/nrd.2023.001
+**Example**: Smith, J. D., Johnson, M. L., & Williams, K. R. (2023). Machine learning approaches in drug discovery. *Nature Reviews Drug Discovery*, *22*(4), 301-318. <https://doi.org/10.1038/nrd.2023.001>
 
 ### Books
 
-**Format**: Author, A. A. (Year). *Title of work: Capital letter also for subtitle*. Publisher Name. https://doi.org/xxxx
+**Format**: Author, A. A. (Year). *Title of work: Capital letter also for subtitle*. Publisher Name. <https://doi.org/xxxx>
 
 **Example**: Kumar, V., Abbas, A. K., & Aster, J. C. (2021). *Robbins and Cotran pathologic basis of disease* (10th ed.). Elsevier.
 
@@ -24,13 +24,13 @@ This document provides detailed guidelines for formatting citations in various a
 
 ### Preprints
 
-**Format**: Author, A. A., & Author, B. B. (Year). Title of preprint. *Repository Name*. https://doi.org/xxxx
+**Format**: Author, A. A., & Author, B. B. (Year). Title of preprint. *Repository Name*. <https://doi.org/xxxx>
 
-**Example**: Zhang, Y., Chen, L., & Wang, H. (2024). Novel therapeutic targets in Alzheimer's disease. *bioRxiv*. https://doi.org/10.1101/2024.01.001
+**Example**: Zhang, Y., Chen, L., & Wang, H. (2024). Novel therapeutic targets in Alzheimer's disease. *bioRxiv*. <https://doi.org/10.1101/2024.01.001>
 
 ### Conference Papers
 
-**Format**: Author, A. A. (Year, Month day-day). Title of paper. In E. E. Editor (Ed.), *Title of conference proceedings* (pp. xx-xx). Publisher. https://doi.org/xxxx
+**Format**: Author, A. A. (Year, Month day-day). Title of paper. In E. E. Editor (Ed.), *Title of conference proceedings* (pp. xx-xx). Publisher. <https://doi.org/xxxx>
 
 ---
 
@@ -53,7 +53,7 @@ This document provides detailed guidelines for formatting citations in various a
 - 1-2 authors: List all
 - 3+ authors: List first author followed by "et al."
 
-**Example**: Zhang, Y. et al. Novel therapeutic targets in Alzheimer's disease. *bioRxiv* https://doi.org/10.1101/2024.01.001 (2024).
+**Example**: Zhang, Y. et al. Novel therapeutic targets in Alzheimer's disease. *bioRxiv* <https://doi.org/10.1101/2024.01.001> (2024).
 
 ---
 
@@ -61,9 +61,9 @@ This document provides detailed guidelines for formatting citations in various a
 
 ### Journal Articles
 
-**Format**: Author, First Name Middle Initial. Year. "Article Title." *Journal Title* volume, no. issue (Month): page range. https://doi.org/xxxx.
+**Format**: Author, First Name Middle Initial. Year. "Article Title." *Journal Title* volume, no. issue (Month): page range. <https://doi.org/xxxx>.
 
-**Example**: Smith, John D., Mary L. Johnson, and Karen R. Williams. 2023. "Machine Learning Approaches in Drug Discovery." *Nature Reviews Drug Discovery* 22, no. 4 (April): 301-318. https://doi.org/10.1038/nrd.2023.001.
+**Example**: Smith, John D., Mary L. Johnson, and Karen R. Williams. 2023. "Machine Learning Approaches in Drug Discovery." *Nature Reviews Drug Discovery* 22, no. 4 (April): 301-318. <https://doi.org/10.1038/nrd.2023.001>.
 
 ### Books
 
@@ -126,7 +126,7 @@ Use superscript numbers in order of appearance: "Recent studies^1,2^ have shown.
 ## DOI Best Practices
 
 1. **Always verify DOIs**: Use the verify_citations.py script to check all DOIs
-2. **Format as URLs**: https://doi.org/10.xxxx/yyyy (preferred over doi:10.xxxx/yyyy)
+2. **Format as URLs**: <https://doi.org/10.xxxx/yyyy> (preferred over doi:10.xxxx/yyyy)
 3. **No period after DOI**: DOI should be the last element without trailing punctuation
 4. **Resolve redirects**: Check that DOIs resolve to the correct article
 
@@ -135,15 +135,18 @@ Use superscript numbers in order of appearance: "Recent studies^1,2^ have shown.
 ## In-Text Citation Guidelines
 
 ### APA Style
+
 - (Smith et al., 2023)
 - Smith et al. (2023) demonstrated...
 - Multiple citations: (Brown, 2022; Smith et al., 2023; Zhang, 2024)
 
 ### Nature Style
+
 - Superscript numbers: Recent studies^1,2^ have shown...
 - Or: Recent studies (refs 1,2) have shown...
 
 ### Chicago Style
+
 - (Smith, Johnson, and Williams 2023)
 - Smith, Johnson, and Williams (2023) found...
 
@@ -152,14 +155,18 @@ Use superscript numbers in order of appearance: "Recent studies^1,2^ have shown.
 ## Reference List Organization
 
 ### By Citation Style
+
 - **APA, Chicago**: Alphabetical by first author's last name
 - **Nature, Vancouver, IEEE**: Numerical order of first appearance in text
 
 ### Hanging Indents
+
 Most styles use hanging indents where the first line is flush left and subsequent lines are indented.
 
 ### Consistency
+
 Maintain consistent formatting throughout:
+
 - Capitalization (title case vs. sentence case)
 - Journal name abbreviations
 - DOI presentation

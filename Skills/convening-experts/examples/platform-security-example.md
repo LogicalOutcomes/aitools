@@ -5,6 +5,7 @@
 ## Expert Panel: Data Platform Decision
 
 **Panel Members:**
+
 - Security Architect
 - IT & Security Specialist
 - DevOps Engineer

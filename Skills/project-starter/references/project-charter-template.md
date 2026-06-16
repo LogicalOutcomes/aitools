@@ -60,7 +60,7 @@ Many consultants skip this step. That's a mistake.
 | **Client Organization** | *[Client organization name]* |
 | **Client Project Sponsor(s)** | *[Name, title]* |
 | **Project Timeline** | *[Start date] to [End date]* |
-| **LO Project Owner** | *[Name]* |
+| **Project Owner** | *[Name]* |
 | **LO Project Manager** | *[Name]* |
 | **Project Code** | *[Project code, e.g., CLIENT-PROJECT-YY]* |
 | **Current Version** | Draft |
@@ -150,6 +150,7 @@ The following are standard assumptions that underlie this Project Charter:
 <summary><strong>Standard Risk Framework</strong> (click to expand)</summary>
 
 **Rating Guide:**
+
 - **Likelihood**: H (High), M (Medium), L (Low)
 - **Impact**: Only list Medium or High impact risks
 - If both likelihood and impact are High, you must have a backup plan
@@ -220,6 +221,7 @@ The following are standard assumptions that underlie this Project Charter:
 ## 8. Communications Plan
 
 A monthly status report will be distributed by the LogicalOutcomes project manager to the Project Sponsor describing:
+
 - What activities were planned
 - What was actually achieved
 - The impact of any gap
@@ -250,18 +252,19 @@ A monthly status report will be distributed by the LogicalOutcomes project manag
 
 </details>
 
-### LogicalOutcomes Team
+### Delivery Team
 
 | Role                   | Responsibilities                                                                                                            | Contact                      |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
-| **Project Owner**      | Project leadership; methodology; author and review deliverables; manage risks and issues                                    | *[Name]*@logicaloutcomes.net |
-| **Project Manager**    | Client liaison for operations; monitor scope, quality, schedule, costs, and risks; coordinate implementation; report issues | *[Name]*@logicaloutcomes.net |
-| **Researcher/Analyst** | Data collection and analysis; author documents as assigned                                                                  | *[Name]*@logicaloutcomes.net |
+| **Project Owner**      | Project leadership; methodology; author and review deliverables; manage risks and issues                                    | *[Name, contact email]* |
+| **Project Manager**    | Client liaison for operations; monitor scope, quality, schedule, costs, and risks; coordinate implementation; report issues | *[Name, contact email]* |
+| **Researcher/Analyst** | Data collection and analysis; author documents as assigned                                                                  | *[Name, contact email]* |
 
 <details>
 <summary><strong>Full Role Descriptions</strong> (click to expand)</summary>
 
 **Project Owner:**
+
 - Provide project leadership
 - Act as client liaison for methodological and strategic issues
 - Define project methodologies
@@ -271,6 +274,7 @@ A monthly status report will be distributed by the LogicalOutcomes project manag
 - Review and provide detailed feedback regarding all project documents and deliverables
 
 **Project Manager:**
+
 - Act as client liaison for operational issues
 - Monitor project scope, quality, schedule, resources, costs, and risks
 - Coordinate implementation of project work
@@ -281,6 +285,7 @@ A monthly status report will be distributed by the LogicalOutcomes project manag
 - Support Project Owner and Analyst in arranging interviews, reviewing data, and report writing
 
 **Researcher/Analyst:**
+
 - Carry out data collection and analysis as assigned by Project Manager
 - Provide leadership and manage work packages as assigned
 - Author, review, and approve project documents as assigned
@@ -311,7 +316,8 @@ A monthly status report will be distributed by the LogicalOutcomes project manag
 | | Signature | Date |
 |-|-----------|------|
 | **Project Sponsor** | | |
-| **LO Project Owner** | | |
+| **Project Owner** | | |
 
 ---
 
+*Related: adapt this template to your organization's project management process and legal/HR requirements before use.*

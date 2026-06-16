@@ -141,7 +141,7 @@ A monthly status report will be distributed by the LogicalOutcomes project manag
 
 | Role | Responsibilities | Contact |
 |------|------------------|---------|
-| **Project Sponsor & Approval Authority** | Guidance on objectives; liaison to senior management; remove roadblocks; approve deliverables | Maria Chen, mchen@example.org |
+| **Project Sponsor & Approval Authority** | Guidance on objectives; liaison to senior management; remove roadblocks; approve deliverables | Maria Chen, <mchen@example.org> |
 | **Tech Team Working Group** | Provide feedback on process, engagement, and decision criteria; provide analytic support | *[Names to be confirmed]* |
 
 ### LogicalOutcomes Team

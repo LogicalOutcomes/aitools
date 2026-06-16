@@ -3,11 +3,12 @@ title: Evaluation Process Guide
 description: How to plan, design, and deliver evaluation projects at LogicalOutcomes
 published: true
 date: 2026-01-28T15:40:35.117Z
-tags: evaluation, methodology, client-services, process
+tags: draft, evaluation, methodology, client-services, process
 editor: markdown
 dateCreated: 2026-01-21T01:18:06.014Z
 ---
 
+> **This is a DRAFT document.** It is published for review purposes and has not been officially approved yet.
 
 # Evaluation Process Guide
 
@@ -42,6 +43,7 @@ Every evaluation needs these four functions filled. One person can fill multiple
 | **Project Manager** | You or coordinator | Monitors timeline; coordinates data collection; keeps the project moving |
 
 **For smaller organizations:**
+
 - Sponsor and Liaison roles are often combined
 - The minimum: someone must OWN the evaluation (strategic) and someone must MANAGE it (operational)
 
@@ -78,6 +80,7 @@ Every evaluation uses a standard logic model with two 3-column tables:
 | Immediate changes | Program goals achieved | Ultimate impact |
 
 **Customize only three elements** for each program:
+
 - **Activities**: The specific services this program provides
 - **Mid-term outcomes**: The program's stated goals
 - **Long-term outcomes**: The ultimate impact the program aims for
@@ -95,12 +98,14 @@ The other elements follow predictable patterns. This standardization makes evalu
 **Focus:** Engage people and clarify scope
 
 **Key tasks:**
+
 - Engage the project sponsor, team members, and key decision-makers
 - Define evaluation objectives and questions
 - Clarify program activities (what the program actually does)
 - Identify interest groups and their concerns
 
 **Deliverables:**
+
 - Clear roles and responsibilities assigned
 - Agreed timelines and resources
 - Defined evaluation questions
@@ -111,6 +116,7 @@ The other elements follow predictable patterns. This standardization makes evalu
 **Focus:** Select measures and prepare tools
 
 **Key tasks:**
+
 - Define desired outcomes and potential risks
 - Select measures for activities and participant goals
 - Select measures for outcomes and interest group feedback
@@ -119,6 +125,7 @@ The other elements follow predictable patterns. This standardization makes evalu
 **Keep it simple.** The LogicalOutcomes framework includes standard tools that work for most programs. You don't need custom instruments.
 
 **Deliverables:**
+
 - Complete evaluation plan (adapted from Evaluation Planner output)
 - Data collection tools ready to use
 - Clear understanding of what data exists and what needs collection
@@ -128,6 +135,7 @@ The other elements follow predictable patterns. This standardization makes evalu
 **Focus:** Collect data and share findings as you go
 
 **Key tasks:**
+
 - Collect data with attention to quality and coverage
 - Design reports and visualizations early (don't wait until the end)
 - Share emerging findings through interim reports
@@ -140,12 +148,14 @@ The other elements follow predictable patterns. This standardization makes evalu
 **Focus:** Turn findings into action
 
 **Key tasks:**
+
 - Produce and discuss reports with staff and interest groups
 - Focus discussions on recommended actions, not just findings
 - Document changes made in response to findings
 - Communicate results to broader audiences as appropriate
 
 **Deliverables:**
+
 - Final report with clear recommendations
 - Evidence of discussions with staff about findings
 - Documentation of actions taken or planned
@@ -170,6 +180,7 @@ If the organization has a participant tracking system, use it as your primary da
 ### 2. Small-Sample Interviews (5-15 Participants)
 
 Use when participant tracker data is insufficient:
+
 - Targeted questions for specific diagnostic purposes
 - Rich qualitative insight
 - Most useful for understanding *why* patterns exist
@@ -289,6 +300,7 @@ Good data on what you can measure beats bad data on what you wish you could meas
 ## What We Do / Don't Do
 
 ### We DO:
+
 - Use the standard logic model (two 3-column tables)
 - Recommend participant tracker data as the primary source
 - Suggest small-sample interviews (5-15 participants) when tracker data is insufficient
@@ -297,6 +309,7 @@ Good data on what you can measure beats bad data on what you wish you could meas
 - Frame evaluation as an intervention that improves services
 
 ### We DON'T:
+
 - Recommend mass surveys
 - Recommend "client satisfaction surveys"
 - Create custom logic model structures
@@ -309,14 +322,19 @@ Good data on what you can measure beats bad data on what you wish you could meas
 ## Resources
 
 ### Tools
+
 - **Evaluation Planner:** [evalplanner.logicaloutcomes.net](https://evalplanner.logicaloutcomes.net/)
 
 ### Related Documents
+
 - [Evaluation Principles](evaluation-principles.md) — Why we do it this way
 
 ### Source
+
 This guide is based on: Kerr, G. & Llewelyn, S. (2024). *LogicalOutcomes Evaluation Planning Handbook.* Available at: [ssrn.com/abstract=4815131](https://ssrn.com/abstract=4815131)
 
 ---
 
 *Last updated: January 2026*
+
+<!-- END OF FILE: evaluation-framework-builder/references/evaluation-services-guide.md — if you do not see this line, the file was truncated in transit. -->

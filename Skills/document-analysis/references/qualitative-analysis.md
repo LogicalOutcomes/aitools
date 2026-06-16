@@ -7,7 +7,7 @@ dynamics, and lived experience that is not fully present in transcript text. The
 supports the analyst; it does not replace the analyst's judgement.
 
 Note: for systematic coding of a full transcript set against a codebook, the qual-analysis
-coding tool or repeatable pipeline is more reliable than conversational analysis — see SKILL.md.
+dedicated coding tool or repeatable pipeline is more appropriate for formal, study-wide work — see SKILL.md.
 
 ## What the model can do
 

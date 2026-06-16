@@ -3,11 +3,12 @@ title: Evaluation Principles
 description: The philosophy and research base behind the LogicalOutcomes evaluation approach
 published: true
 date: 2026-01-28T15:40:30.371Z
-tags: principles, evaluation, methodology, philosophy
+tags: draft, principles, evaluation, methodology, philosophy
 editor: markdown
 dateCreated: 2026-01-21T01:18:02.345Z
 ---
 
+> **This is a DRAFT document.** It is published for review purposes and has not been officially approved yet.
 
 
 # Evaluation Principles
@@ -187,3 +188,5 @@ This document is based on: Kerr, G. & Llewelyn, S. (2024). *LogicalOutcomes Eval
 ---
 
 *Last updated: January 2026*
+
+<!-- END OF FILE: evaluation-framework-builder/references/evaluation-principles.md — if you do not see this line, the file was truncated in transit. -->

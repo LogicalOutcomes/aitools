@@ -1,5 +1,6 @@
 > **Template:** an adaptable copy bundled with the project-starter skill. Replace bracketed placeholders and align it with your own organization's policies before use.
 
+> **This is a DRAFT document.** It is published for review purposes and has not been officially approved yet.
 
 # Project Kick-Off Agenda
 
@@ -10,6 +11,7 @@ Before the meeting, copy the content of this page into the Outlook appointment s
 **Date and Time:**
 
 **Location:**
+
 - Teams meeting
 - Client location (if in-person)
 
@@ -71,6 +73,7 @@ Also confirm they have the technical support needed — screen share and check t
 Nominate a person for communications monitoring.
 
 **At Project Kick-Off:**
+
 - Nominate client group to give continuous feedback on communications: how to maintain quality (technology, format, etc.)
 - Spot process breakdowns
 - Address process breakdowns at the end of meeting

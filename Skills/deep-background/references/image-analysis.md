@@ -2,7 +2,7 @@
 
 Read this file only when an image is actually in play. The high-level trigger — describe, transcribe, and ask the user to confirm before continuing — lives in SKILL.md; this file is the detailed method.
 
-Adapted from Mike Caulfield's Deep Background / SIFT Toolbox prompt: https://checkplease.neocities.org/sift-toolbox/index.html
+Adapted from Mike Caulfield's Deep Background / SIFT Toolbox prompt: <https://checkplease.neocities.org/sift-toolbox/index.html>
 
 ---
 

@@ -6,9 +6,9 @@
 
 This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-Cite as: Kerr, Gillian and Llewelyn, Sophie, *LogicalOutcomes Evaluation Planning Handbook* (April 30, 2024). Available at SSRN: https://ssrn.com/abstract=4815131
+Cite as: Kerr, Gillian and Llewelyn, Sophie, *LogicalOutcomes Evaluation Planning Handbook* (April 30, 2024). Available at SSRN: <https://ssrn.com/abstract=4815131>
 
-Contact the authors at info@logicaloutcomes.net.
+Contact the authors at <info@logicaloutcomes.net>.
 
 ---
 
@@ -441,7 +441,8 @@ The evaluation templates are based on the following logic model for effective, h
 | Financial resources | | Staff meetings on feedback & quality | Increase accessibility & equity to services | | |
 | | | Implementation plans (Board strategy, operational plan) | Increase responsiveness to key stakeholders | | |
 | | | | More compelling case for funding | | |
-```
+
+```text
 
 When applied to community and social services, the model adds a service provision layer:
 
@@ -560,3 +561,5 @@ Sampath, B., Rakover, J., Baldoza, K., Mate, K., Lenoci-Edwards, J., & Barker, P
 Swift, J. K., & Greenberg, R. P. (2012). Premature discontinuation in adult psychotherapy: A meta-analysis. *Journal of Consulting and Clinical Psychology*, 80, 547–559. https://doi.org/10.1037/a0028226
 
 Zegers, M., Veenstra, G. L., Gerritsen, G., Verhage, R., Hoeven, J. G. van der, & Welker, G. A. (2020). Perceived Burden Due to Registrations for Quality Monitoring and Improvement in Hospitals: A Mixed Methods Study. *International Journal of Health Policy and Management*. https://doi.org/10.34172/ijhpm.2020.96
+
+<!-- END OF FILE: evaluation-framework-builder/references/evaluation-planning-handbook.md — if you do not see this line, the file was truncated in transit. -->

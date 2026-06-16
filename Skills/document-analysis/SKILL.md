@@ -21,6 +21,8 @@ metadata:
 
 # Document Analysis
 
+> ⚠️ **Do not upload documents containing identifiable information about real people to a general-purpose AI assistant.** This includes names, contact details, health data, case notes, or any other information that could identify a client, participant, employee, or donor. De-identify documents before uploading — replace names and identifiers with codes (P1, P2, "one program manager"). See the Canadian privacy triage note below.
+
 Support for deep work with complex, multi-page documents: surfacing patterns, extracting
 themes, identifying gaps, flagging contradictions, and distinguishing what a document says,
 what it implies, and what it leaves out. The user is the analyst; this skill helps them
@@ -32,7 +34,19 @@ health, youth services, settlement services, food security, mental health, publi
 interventions. Avoid corporate, manufacturing, banking, or retail examples — they read as
 foreign to most nonprofit clients.
 
-## Which tool is canonical for what
+## Canadian Privacy Triage
+
+**This is not legal advice — confirm with your own privacy or legal contact.**
+
+Which privacy law applies depends on your organization type, what information you are handling, and whether it crosses a border:
+
+- **PIPEDA** (federal) applies to private-sector organizations engaged in commercial activity involving personal information. It does **not** generally apply to non-profits and charities **unless** they engage in commercial activity. See [PIPEDA in brief](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/) and [Privacy laws in Canada](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/02_05_d_15/) (OPC).
+- **Provincial privacy laws** (e.g., PHIPA in Ontario for health information, PIPA in Alberta and BC) and contractual obligations may apply regardless.
+- **TCPS2 research ethics** applies when you are collecting or using data about human participants for research purposes.
+
+Operational defaults: de-identify before analysis; never paste identifiable data into a general-purpose AI assistant; confirm that participants provided informed consent for this use of their information.
+
+## Which Tool is Canonical for What
 
 - **Systematic qualitative coding of interview transcript sets** (a full study's transcripts,
   coded consistently against a codebook): for formal, study-wide coding against a fixed
@@ -41,7 +55,7 @@ foreign to most nonprofit clients.
   first-pass work, for transcript questions arising inside a broader document conversation, or
   when the user explicitly wants conversational analysis.
 
-## Workflow: orient first, then go deep
+## Workflow: Orient First, Then Go Deep
 
 When a document arrives, don't dive straight into analysis. A brief orientation catches
 upload problems (truncation, wrong file), confirms shared understanding, and lets the user
@@ -60,7 +74,7 @@ transcripts, note participant count, approximate length, and visible structure. 
 long documents, summarize each individually before attempting cross-document synthesis — it
 is more reliable than synthesizing everything at once.
 
-## Privacy and de-identification defaults
+## Privacy and De-identification Defaults
 
 Uploaded documents may contain participant names, health data, case details, or client
 information. Your organization's de-identification policy governs; sensible operational defaults are:
@@ -78,7 +92,7 @@ information. Your organization's de-identification policy governs; sensible oper
 - For documents from research involving human participants, remind the user to verify that
   their use of AI tools is consistent with their ethics approval.
 
-## Analysis capabilities
+## Analysis Capabilities
 
 **Document summary** — concise orientation: key findings, methodology, conclusions,
 limitations, structure.
@@ -114,7 +128,7 @@ plan → instruments → raw data → findings report → final report; follow y
 evaluation document lifecycle guidance). An evaluation plan needs feasibility-and-alignment analysis; a findings
 report needs evidence-quality analysis.
 
-## Qualitative analysis
+## Qualitative Analysis
 
 Qualitative analysis is interpretive work — it requires understanding context, culture, power
 dynamics, and lived experience. This skill supports it but cannot replace the analyst's
@@ -128,7 +142,7 @@ your review", always marked as draft); ground every theme in quotes with locatio
 what participants said before interpreting what it means; and invite the analyst's contextual
 knowledge.
 
-### Counting theme frequency
+### Counting Theme Frequency
 
 When counts matter ("how many participants raised cost?"), **compute them programmatically**:
 search the source files with code, count matches against the coded segments, and report the
@@ -140,7 +154,7 @@ language: "a recurring theme across most interviews", "raised by a few participa
 participant offered a distinct perspective". Never report a specific count you have not
 verified programmatically or by directly enumerable inspection (e.g., three short excerpts).
 
-## Epistemic discipline: states / implies / infers
+## Epistemic Discipline: States / Implies / Infers
 
 In every substantive analysis, label which of three things each claim is:
 
@@ -159,7 +173,7 @@ claims), or **methodologically limited** (small samples, unclear measures, missi
 groups). Note data limitations before interpreting data: a finding based on 8 interviews
 carries different weight than one based on 200 survey responses.
 
-## External sources
+## External Sources
 
 Web access is available. Fetching external standards, frameworks, or published benchmarks to
 analyze a document against is fine (e.g., comparing a report's methods section to RE-AIM or
@@ -167,14 +181,14 @@ to a funder's reporting requirements). But **every claim about what a document c
 come from the document itself** — never let fetched material blur into "the report says".
 Keep the two evidence streams labeled.
 
-## Citing the document
+## Citing the Document
 
 Every claim about a document must reference a specific location: page numbers, section
 headers, direct quotes for key claims, table/figure references. "On page 12, under
 'Stakeholder Perspectives,' the report states..." is useful. "The report mentions stakeholder
 perspectives" is not — it can't be checked.
 
-## Output formats
+## Output Formats
 
 Match the format to the question; offer alternatives when the best fit is unclear. The six
 standard formats (document summary, thematic analysis, gap analysis, cross-document
@@ -183,7 +197,7 @@ comparison, evidence map, coding summary) are specified in `references/output-fo
 `assets/output-templates.md` when producing one as a file. Thematic analyses and coding
 summaries are always marked as drafts for analyst review.
 
-## Working style
+## Working Style
 
 - Be thorough but structured — dense analysis is fine; disorganized analysis is not.
 - Ask before assuming scope on long documents.

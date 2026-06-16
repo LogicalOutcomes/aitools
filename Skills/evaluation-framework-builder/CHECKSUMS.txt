@@ -1,0 +1,11 @@
+# Integrity manifest for evaluation-framework-builder
+# Verify after publishing. Each .md file also ends with an END OF FILE sentinel.
+# To check on any machine:  md5sum -c CHECKSUMS.txt  (run from inside the skill folder)
+
+de41050dbb58731906ad4821108747bf  SKILL.md  (15975 bytes)
+667b30c5362c51664bfe49b0f94b0ddd  assets/html-template.html  (4475 bytes)
+24f95896ac99f105a3fcf5bfc58504f9  references/evaluation-planning-handbook.md  (61602 bytes)
+8e2615f7485af8d32e8ef18c58f82a3d  references/evaluation-principles.md  (9903 bytes)
+a142e84a209af70e727e1c019acf3c03  references/evaluation-services-guide.md  (12396 bytes)
+f2928c049f4ce4d7e8d5156e730f1c08  references/plan-structure.md  (12149 bytes)
+2504d1fe6f8a003ca72a80fc2103a73e  references/sample-plan.md  (28769 bytes)

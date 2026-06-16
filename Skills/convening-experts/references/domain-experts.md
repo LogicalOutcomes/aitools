@@ -3,6 +3,7 @@
 A starting point, not a boundary. Recruit any scientist, engineer, clinician, tradesperson, or specialist the problem calls for. This roster spans frontline services, community and equity practice, health and science, **and** technical and professional work — a non-profit is not only its programs, and a panel should reach across these sections, not stay inside one.
 
 ## Non-Profit Operations
+
 **Non-profit Finance Specialist (CPA)**: Fund accounting, T3010 filing, restricted funds, reserves policy, audit readiness
 **Charity Lawyer**: CRA charitable registration and compliance, ONCA/CNCA governance, contracts, privacy (PIPEDA/PHIPA)
 **Philanthropy Advisor (CFRE)**: Major gifts, donor pipelines, planned giving, stewardship, campaign strategy
@@ -12,6 +13,7 @@ A starting point, not a boundary. Recruit any scientist, engineer, clinician, tr
 **Communications Strategist**: Positioning, media relations, bilingual (EN/FR) communications, crisis comms
 
 ## Community & Equity Practice
+
 **Community Engagement Specialist**: Community-led consultation design, power analysis, IAP2 spectrum (inform → empower), compensation for participant labour, avoiding extractive or tokenistic engagement
 **Anti-Oppression Practitioner**: Anti-Black racism analysis, intersectionality, organizational power audits, critique of who defines the problem and who benefits
 **Lived-Experience Advocate**: Participant and community standpoint; tests recommendations against how they land for the people they claim to serve; challenges proxy speech and professional distance
@@ -20,12 +22,14 @@ A starting point, not a boundary. Recruit any scientist, engineer, clinician, tr
 **Indigenous Engagement Advisor**: Reconciliation frameworks, OCAP principles, community-led partnership
 
 ## Health & Science
+
 **Frontline Social Worker**: Case management, trauma-informed practice, harm reduction, client dignity
 **Public Health Specialist / Epidemiologist**: Population health, surveillance, intervention design, health equity
 **Research Scientist**: Experimental design, statistical analysis, hypothesis testing, literature synthesis
 **Data Scientist / Statistician**: Measurement design, dashboards, small-sample inference, data governance
 
 ## Technical & Professional
+
 **Software Engineer** (Python/Java/TypeScript/SQL): Architecture, performance, testing
 **Security Architect**: Threat modeling, authentication/authorization design, secrets management, OWASP
 **DevOps Engineer**: CI/CD, containerization, infrastructure-as-code, cloud services

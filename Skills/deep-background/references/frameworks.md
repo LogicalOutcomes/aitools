@@ -2,7 +2,7 @@
 
 Read this file before producing a fact-check analysis. It is the reference for classifying and rating evidence, running a Toulmin analysis, weighing sources, resolving contradictions, handling stated motives, and labelling the structure of disagreement when "reading the room."
 
-Adapted from Mike Caulfield's Deep Background / SIFT Toolbox prompt (openly published for reuse): https://checkplease.neocities.org/sift-toolbox/index.html
+Adapted from Mike Caulfield's Deep Background / SIFT Toolbox prompt (openly published for reuse): <https://checkplease.neocities.org/sift-toolbox/index.html>
 
 ---
 

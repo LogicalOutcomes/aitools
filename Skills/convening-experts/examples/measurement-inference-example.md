@@ -5,6 +5,7 @@
 ## Expert Panel: Causal Inference on a Pre/Post Result
 
 **Panel Members:**
+
 - Data Scientist / Statistician
 - Program Evaluator
 - Theory of Change Specialist
@@ -84,15 +85,19 @@ The Finance framing - buy the cheapest design that most reduces decision risk - 
 ## Round 3: Convergence
 
 ### Data Scientist / Statistician
+
 Converged. The pre-post result cannot support a causal claim; RTM and selection are expected to inflate it. Two cheap design upgrades fix most of this: a regression-discontinuity comparison using the just-below-cutoff group (data already collected), and a post-program follow-up wave to test durability.
 
 ### Program Evaluator
+
 Agreed, and I'll add the honest interim statement for the funder: quantify the expected RTM component from the scale's reliability, report the *residual* as the candidate effect with appropriate uncertainty, and label the current number as not-yet-causal rather than either "proven" or "nothing."
 
 ### Theory of Change Specialist
+
 Agreed, with the maintenance-window follow-up as a non-negotiable, because it simultaneously tests durability and discriminates artifact from effect. And confirm at least one mediator moved, or we don't know what we changed.
 
 ### Finance Analyst
+
 Agreed. Fund the RD analysis and the follow-up wave - both near-zero marginal cost - before any scaling commitment. Hold the scale-up decision until the residual effect and its durability are estimated. This is cheaper than scaling on an inflated number and cheaper than a standalone RCT.
 
 ---
@@ -102,11 +107,13 @@ Agreed. Fund the RD analysis and the follow-up wave - both near-zero marginal co
 **Recommendation:** Do **not** tell the funder the program "caused" the 14-point drop, and do **not** scale on the current evidence. The pre-post design cannot separate program effect from regression to the mean and selection (Ashenfelter's Dip), both of which are expected here by construction and likely account for a substantial share of the observed change.
 
 **Before any scaling decision, run two low-cost design upgrades using data largely already in hand:**
+
 1. **Regression-discontinuity** comparison using clients who scored just below the enrollment cutoff as controls - a far stronger causal design than pre-post, valid at the cutoff. (Generalizes to near-threshold clients, not automatically to the most severe.)
 2. **A post-program follow-up wave** (e.g., 12 weeks out) to test durability - which also discriminates a real, durable effect (gain holds) from RTM / support-presence artifact (gain rebounds).
 3. Quantify the **expected RTM component** from the scale's test-retest reliability, and report the **residual** as the candidate effect with honest uncertainty. Confirm at least one **hypothesized mediator** moved.
 
 **Decision Framework (RAPID):**
+
 - **Recommend:** RD analysis + follow-up wave + RTM quantification before scaling; honest interim reporting to the funder
 - **Agree:** Executive Director, funder (on the revised evidence bar)
 - **Perform:** Data Scientist (RD model, RTM estimate), Program Evaluator (follow-up wave, reporting), Theory of Change Specialist (mediator check)

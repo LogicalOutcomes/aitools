@@ -7,6 +7,7 @@
 ## Expert Panel: Intake No-Show Intervention
 
 **Panel Members:**
+
 - Program Evaluator
 - Behavioural Economist
 - Frontline Social Worker
@@ -23,6 +24,7 @@ The proposal bundles two mechanisms with very different evidence bases; evaluate
 **Reminders — strong, well-replicated.** A Cochrane review and multiple RCTs support reminders. The relevant trial here is the one that matches the population: an urban resident clinic, 95% Black, low-income, baseline no-show ~31%, where adding an SMS reminder cut no-shows from 38.1% (control) to 23.5% (intervention) — ~14.6 percentage points, p=0.04. That is a real, sizeable effect in a population demographically close to ours. The broader literature puts reminder effects in the range of a 10-38% *relative* reduction in missed visits. Low cost, low risk. I'd adopt reminders almost regardless of the rest.
 
 **The "confirm or lose the slot" rule - this is not a reminder, it's a conditional-access policy, and it must be evaluated as one.** It will reduce the *recorded* no-show rate. The mechanism by which it does so is the whole question, and it splits into two:
+
 - *Genuine behaviour change* (people attend who otherwise wouldn't), or
 - *Denominator manipulation* (people who don't confirm are removed from the schedule before they can be counted as no-shows).
 
@@ -89,15 +91,19 @@ Building on the Evaluator's revised endpoint - measuring total people served is 
 ## Round 3: Convergence
 
 ### Program Evaluator
+
 Converged: separate the mechanisms; adopt the loss-framed reminder; reject the access penalty; collect confirmation as an opt-out signal; and measure on disaggregated total-people-served and time-to-intake, with the no-show rate demoted to a gameable secondary.
 
 ### Behavioural Economist
+
 Agreed. We keep the lever the evidence supports (loss-framed *information*, NHS-replicated) and drop the lever that aims loss aversion at access. Pilot the opt-out wording in EN and FR before scaling - message phrasing has measurable effects, so it shouldn't be guessed.
 
 ### Frontline Social Worker
+
 Agreed, with the two desk conditions: silence defaults to held; any "can't make it" triggers an offered re-book. That's a workflow I can run and defend to a client's face.
 
 ### Lived-Experience Advocate
+
 I can support this version: the exclusion mechanism is gone and the measurement will actually see the tail. The condition I won't drop - affected clients help set the success criteria *before* this scales. If that step gets cut for speed, my agreement doesn't transfer to the scaled version.
 
 ---
@@ -109,6 +115,7 @@ I can support this version: the exclusion mechanism is gone and the measurement 
 **Why the proposal changed:** The penalty would reduce the *recorded* no-show rate substantially - the 34%->11% community-health-center precedent is real - but the panel established that this works largely through denominator attrition (removing the high-risk tail from the schedule) and upstream booking suppression, at a documented ~20 staff-hours/week, falling hardest on the low-income and racialized groups with the highest baseline non-attendance (adjusted ORs ~2.9 and ~3.3). It optimizes the organization's scheduling pain, not client attendance. The opt-out redesign preserves the capacity signal leadership wanted without the exclusion.
 
 **Decision Framework (RAPID):**
+
 - **Recommend:** Loss-framed reminder + opt-out confirmation + offered re-book; no slot-release penalty
 - **Agree:** Program leadership; intake staff (workflow); client/community representatives (success criteria)
 - **Perform:** Intake team (workflow), IT (opt-out SMS logic, EN/FR), Evaluator (measurement plan)

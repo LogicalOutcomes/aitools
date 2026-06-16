@@ -16,6 +16,7 @@ interviewer effects, non-verbal communication, or contextual factors not capture
 transcripts. [Add data-specific limitations.]
 
 ## Theme 1: [theme statement]
+
 - **Prominence:** [verified count with method, or descriptive frequency language]
 - **Supporting evidence:**
   - P_: "[quote]" ([location])
@@ -26,6 +27,7 @@ transcripts. [Add data-specific limitations.]
 [Repeat per theme.]
 
 ## Areas where data is thin
+
 - [...]
 
 > Suggested codes and themes reflect patterns in the text as the model processes it. They may
@@ -45,9 +47,11 @@ Internal-logic review: does the report's own evidence justify its own conclusion
 | 1 | [claim] (p. _) | [evidence] (p. _, Table _) | Well-supported / Weak / Unsupported | [one line] |
 
 ## Claims lacking support
+
 - [...]
 
 ## Notes on methodology affecting weight of evidence
+
 - [sample sizes, measures, comparison groups]
 
 ---
@@ -72,18 +76,23 @@ Internal-logic review: does the report's own evidence justify its own conclusion
 # Gap Analysis — [document name]
 
 ## Adequately addressed
+
 - [...]
 
 ## Claimed but inadequately addressed
+
 - [topic] — [what's missing] (claimed at [location])
 
 ## Ambiguous
+
 - [passage/topic] ([location]) — interpretations: [A] / [B]
 
 ## Questions the evidence raises but the document does not answer
+
 - [...]
 
 ## Suggested follow-up
+
 - [...]
 
 ---
@@ -95,13 +104,17 @@ Internal-logic review: does the report's own evidence justify its own conclusion
 **Documents:** D1 = [name]; D2 = [name]; ...
 
 ## Agreement
+
 - [finding] (D1 [loc]; D2 [loc])
 
 ## Disagreement / contradiction
+
 - [issue]: D1 says [...] ([loc]) vs D2 says [...] ([loc])
 
 ## Complementary findings
+
 - [...]
 
 ## Gaps no document addresses
+
 - [...]

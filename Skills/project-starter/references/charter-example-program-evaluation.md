@@ -39,6 +39,7 @@
 CIP is a 3-year project that aims to improve integration outcomes for newcomers by strengthening collaboration between community service providers and volunteer support groups in the region.
 
 CIP comprises three phases:
+
 1. **Research**: Identification of promising practices and gaps/challenges in service-volunteer collaboration
 2. **Design**: Development of ideas to address challenges through collaborative multi-stakeholder design workshops
 3. **Pilots**: Testing of shortlisted ideas through tool development and pilots
@@ -48,9 +49,11 @@ Knowledge dissemination and sharing of lessons learned are key components throug
 LogicalOutcomes will develop and implement an evaluation framework to document lessons learned and obtain accurate performance data. We will collaborate with CIP staff to collect and analyze data on project outcomes:
 
 **Medium-term outcome:**
+
 - Newcomers make informed decisions about life in Canada, access appropriate services, and participate fully in their communities
 
 **Short-term outcomes:**
+
 - Awareness of community and other resources to deal with settlement issues
 - Partners and stakeholders are engaged and implement strategies to address newcomers' needs
 - Community services are responsive to the needs of newcomers and communities
@@ -162,6 +165,7 @@ This project includes specific evaluation questions:
 ## 9. Communications Plan
 
 Quarterly interim reports will be delivered to support:
+
 - Funder Lessons Learned requirements (January and July)
 - Lakeshore narrative reports to funder (November and March)
 
@@ -175,8 +179,8 @@ A monthly status report will be distributed by the LogicalOutcomes project manag
 
 | Role | Responsibilities | Contact |
 |------|------------------|---------|
-| **Project Sponsor** | Strategic direction; approval of deliverables; liaison to funder | Priya Sharma, psharma@example.org |
-| **Project Co-Sponsor** | Operational oversight; feedback on tools and reports | James Wilson, jwilson@example.org |
+| **Project Sponsor** | Strategic direction; approval of deliverables; liaison to funder | Priya Sharma, <psharma@example.org> |
+| **Project Co-Sponsor** | Operational oversight; feedback on tools and reports | James Wilson, <jwilson@example.org> |
 
 ### LogicalOutcomes Team
 

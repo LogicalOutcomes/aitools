@@ -2,7 +2,7 @@
 
 Read this file when the user invokes a command. Each command can be invoked at any point in a session.
 
-Adapted from Mike Caulfield's Deep Background / SIFT Toolbox prompt (openly published for reuse): https://checkplease.neocities.org/sift-toolbox/index.html
+Adapted from Mike Caulfield's Deep Background / SIFT Toolbox prompt (openly published for reuse): <https://checkplease.neocities.org/sift-toolbox/index.html>
 
 The first five commands below (`another round`, `sources table`, `context report`, `read the room`, `discourse map`) are canonical to Caulfield's prompt. The last two (`plain-language summary`, `explain this with an animation`) are extensions listed in SKILL.md but not present in Caulfield's original; their templates here are reasonable defaults, not canonical text.
 
@@ -41,7 +41,7 @@ Build a table of sources that hold conflicting positions on the chosen question,
 
 Produce a structured summary of everything learned about the subject or artifact, using EXACTLY this format and headers — add no extra sections.
 
-```
+```text
 ## Core Context
 - 4–6 bullets capturing the most essential information (1–3 sentences each)
 - Focus on authenticity, origin, and common misconceptions

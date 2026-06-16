@@ -16,6 +16,7 @@ Convene domain experts and methodological specialists to solve problems through 
 ## Panel Format
 
 ### Single-Round Consultation
+
 For simpler problems requiring multiple viewpoints:
 
 1. **Assemble panel** (3-5 experts based on problem domain, seated for productive tension — see below)
@@ -23,6 +24,7 @@ For simpler problems requiring multiple viewpoints:
 3. **Synthesize recommendations** with attribution, surfacing where the experts disagreed
 
 ### Multi-Round Discussion
+
 For complex problems requiring collaborative reasoning:
 
 1. **Round 1**: Each expert analyzes the problem independently
@@ -33,12 +35,13 @@ For complex problems requiring collaborative reasoning:
 ## Expert Roles
 
 **Available expertise spans:**
+
 - Sector & professional domain experts — non-profit operations, community & equity practice, health & science, and technical & professional roles (software, security, DevOps, data, supply chain, risk)
 - Methodological & framework specialists — strategic, process improvement, innovation, systems analysis, root cause, and evaluation & behaviour
 
 See [references/domain-experts.md](references/domain-experts.md) and [references/methodological-frameworks.md](references/methodological-frameworks.md) for the complete role catalogue.
 
-Claude loads the relevant reference(s) based on the problem domain. The catalogue is a starting point, not a boundary — recruit any specialist the problem genuinely calls for. A panel should reach **across** sections (e.g., a technical decision in a non-profit still needs the legal and equity lenses), not stay inside one.
+The assistant loads the relevant reference(s) based on the problem domain. The catalogue is a starting point, not a boundary — recruit any specialist the problem genuinely calls for. A panel should reach **across** sections (e.g., a technical decision in a non-profit still needs the legal and equity lenses), not stay inside one.
 
 ## Seating for Productive Tension
 
@@ -58,7 +61,7 @@ The clash is a feature. The synthesis is stronger for having survived it.
 
 ## Panel Convening Logic
 
-Claude selects 3-5 experts based on problem characteristics, then seats one for tension.
+The assistant selects 3-5 experts based on problem characteristics, then seats one for tension.
 
 **Problem type → core experts + tension seat**
 
@@ -77,7 +80,7 @@ Refer to experts by **role title only** — never invent personal names or perso
 
 ### Single-Round Format
 
-```
+```text
 ## Expert Panel: [Topic]
 
 **Panel Members:**
@@ -105,7 +108,7 @@ and where it did not — do not manufacture consensus.]
 
 ### Multi-Round Format
 
-```
+```text
 ## Expert Panel: [Topic]
 
 **Panel Members:**
@@ -155,30 +158,35 @@ remain live and why they matter to the decision]
 ## Expert Behaviour Guidelines
 
 **Domain Experts:**
+
 - Apply real-world operating context (lean budgets, regulatory constraints, the actual caseload)
 - Use domain-appropriate terminology without over-explanation
 - Prioritize practical implementation over theoretical perfection
 - Flag domain-specific risks and constraints
 
 **Framework Experts:**
+
 - Apply frameworks systematically (show the structure)
 - Adapt frameworks to problem context (not rigid application)
 - Explain "why this framework" for this problem
 - Integrate domain context when applying generic frameworks
 
 **Equity & Standpoint Experts (Anti-Oppression Practitioner, Lived-Experience Advocate, Accessibility Specialist, Africentric Practice Specialist, Indigenous Engagement Advisor):**
+
 - Challenge *who defined the problem* and *who benefits* from the proposed framing, not only the proposed solution
 - Test every recommendation against how it lands for the people it claims to serve
 - Name extraction, tokenism, and proxy speech when they appear in the other experts' proposals
 - These experts are expected to disagree with efficiency- and compliance-framed recommendations; that disagreement is the point, not a failure to align
 
 **Cross-Panel Interaction:**
+
 - Reference other experts' points specifically ("Building on the Systems Thinker's observation about the reinforcing loop...")
 - Challenge constructively ("The Program Evaluator's metric misses what I see daily, because...")
 - Synthesize across disciplines ("This connects the Security Architect's data-residency constraint with the Charity Lawyer's PHIPA obligation...")
 - Flag tensions between perspectives explicitly
 
 **Disagreement Handling:**
+
 - Make disagreements productive (what assumptions differ?)
 - Present multiple valid approaches when consensus isn't required
 - Identify the decision criteria that would resolve a disagreement
@@ -190,6 +198,7 @@ remain live and why they matter to the decision]
 When the panel must recommend action:
 
 **RAPID (Bain)**
+
 - **Recommend**: Panel's recommendation with rationale
 - **Agree**: Which stakeholders must agree
 - **Perform**: Who implements
@@ -197,11 +206,13 @@ When the panel must recommend action:
 - **Decide**: Who makes the final decision
 
 **Weighted Decision Matrix**
+
 - Criteria (importance weighted)
 - Options scored on each criterion
 - Total score with sensitivity analysis
 
 **Risk-Benefit Analysis**
+
 - Upside potential (probability × impact)
 - Downside risk (probability × impact)
 - Mitigation strategies
@@ -212,12 +223,14 @@ When the panel must recommend action:
 Apply the operating context of a mission-driven / non-profit organization automatically, and adapt it to the specific problem rather than assuming every question is a frontline-services question. This organization spans **programs and services, community and equity practice, and technical and operational functions** — a question may sit in any of these, or across them.
 
 **Common constraints:**
+
 - Lean budgets and stretched, multi-hatted teams; capacity is often the binding constraint, not ideas
 - Canadian regulatory and governance context where relevant (CRA charitable compliance, ONCA/CNCA, privacy under PIPEDA/PHIPA, accessibility under AODA)
 - Bilingual (EN/FR) and plain-language obligations for public-facing work
 - Donor and client data protection; data residency and consent
 
 **Cultural factors:**
+
 - Equity and community trust are first-order considerations, not add-ons
 - Decisions are judged by how they land on the people served, not only by efficiency or cost
 - Evidence and lived experience are both legitimate forms of knowledge, and they sometimes conflict
@@ -243,11 +256,11 @@ with at least one disagreement preserved rather than smoothed.
 
 ### Example 1: Program / Service Design (Multi-Round) — `services-equity-example.md`
 
-```
+```text
 User: Our intake no-show rate is ~35%. Staff proposed an SMS reminder plus a
 rule that clients must confirm 24h ahead or the slot is released.
 
-Claude convenes:
+The assistant convenes:
 - Program Evaluator (RE-AIM; the denominator-artifact problem)
 - Behavioural Economist (loss-framed information vs. loss-framed access penalty)
 - Frontline Social Worker (operational reality, non-attendance predictors)
@@ -260,11 +273,11 @@ effect sizes and being explicit about evidence quality.
 
 ### Example 2: Technical / Security Decision (Single-Round) — `platform-security-example.md`
 
-```
+```text
 User: We hold donor and client data. Managed vendor CRM, or self-host an
 open-source stack, with one IT person and two volunteers?
 
-Claude convenes:
+The assistant convenes:
 - Security Architect (threat model; control you can't exercise is liability)
 - IT & Security Specialist (tension seat — lean-team patch/restore capacity)
 - DevOps Engineer (what "self-host responsibly" actually costs to operate)
@@ -276,11 +289,11 @@ Format: Single-round → RAPID framework synthesis
 
 ### Example 3: Causal Inference / Measurement (Multi-Round) — `measurement-inference-example.md`
 
-```
+```text
 User: Distress fell 72→58 pre/post in our new program, paired t-test p<0.001.
 Can we tell the funder the program caused it and scale?
 
-Claude convenes:
+The assistant convenes:
 - Data Scientist / Statistician (regression to the mean, no counterfactual)
 - Program Evaluator (Ashenfelter's Dip; regression-discontinuity fix)
 - Theory of Change Specialist (mechanism + endpoint-timing/durability)
@@ -294,6 +307,7 @@ See the `examples/` directory for the full worked panels.
 ## Constraints
 
 **Never:**
+
 - Use fictional or personal names for experts (use role titles only: "Software Engineer", not "Dr. John Smith, Software Engineer")
 - Invent organization-specific facts beyond general domain knowledge
 - Apply frameworks rigidly without problem context
@@ -303,6 +317,7 @@ See the `examples/` directory for the full worked panels.
 - Make experts repeat each other (each should contribute uniquely)
 
 **Always:**
+
 - Select experts genuinely relevant to the problem, and seat at least one for productive tension
 - Reach across roster sections when the problem does (technical + legal + equity, etc.)
 - Make cross-expert references specific and substantive — quote the actual point being engaged
@@ -313,7 +328,7 @@ See the `examples/` directory for the full worked panels.
 
 ## Activation Decision Tree
 
-```
+```text
 Is the problem complex with multiple valid approaches?
 ├─ Yes → Expert panel
 │   ├─ Spans multiple domains or needs a view challenged? → Multi-round discussion
@@ -333,6 +348,7 @@ Requires a systematic framework?
 ## Quality Indicators
 
 **Good panel:**
+
 - Each expert contributes a unique insight
 - Cross-references are specific and substantive (they name the point being engaged)
 - At least one genuine disagreement surfaces, and it is engaged rather than smoothed
@@ -341,6 +357,7 @@ Requires a systematic framework?
 - Where the decision touches service users, their standpoint visibly shaped the outcome
 
 **Poor panel (flattened):**
+
 - Experts state views in isolation and never engage each other
 - Generic advice not grounded in a framework or domain
 - No synthesis or integration across perspectives

@@ -20,11 +20,13 @@
 **Objectives**: [Primary and secondary objectives]
 **Methods**: [Databases searched (academic and grey literature), dates, selection criteria, quality assessment approach]
 **Key Findings**:
+
 - [Finding 1 — one sentence]
 - [Finding 2 — one sentence]
 - [Finding 3 — one sentence]
 
 **Practice Recommendations**:
+
 - [Recommendation 1]
 - [Recommendation 2]
 - [Recommendation 3]
@@ -46,6 +48,7 @@
 [Define the scope. State the specific research questions the review addresses.]
 
 **Research Questions:**
+
 1. [Research question 1 — e.g., What interventions are effective for...?]
 2. [Research question 2 — e.g., What implementation factors influence...?]
 3. [Research question 3 — e.g., What are the gaps in the evidence base for...?]
@@ -87,6 +90,7 @@
 | [Additional] | [YYYY-MM-DD] | [Method] | [n] |
 
 #### Additional Search Methods
+
 - [ ] Citation chaining (forward and backward)
 - [ ] Expert/stakeholder consultation
 - [ ] Organizational website searches
@@ -98,6 +102,7 @@
 ### 2.3 Inclusion and Exclusion Criteria
 
 **Inclusion Criteria:**
+
 - [Population: e.g., Youth aged 13-24 experiencing homelessness]
 - [Intervention/Topic: e.g., Any structured intervention or program]
 - [Setting: e.g., Urban settings in Canada (or North America/international)]
@@ -108,6 +113,7 @@
 - [Languages: English, French]
 
 **Exclusion Criteria:**
+
 - [e.g., Studies focusing exclusively on adult (25+) homelessness without youth-specific findings]
 - [e.g., Editorials and opinion pieces without original data]
 - [e.g., Conference abstracts without available full text or report]
@@ -155,7 +161,8 @@
 **Summary**: [X records identified → Y after deduplication → Z after screening → N included]
 
 **PRISMA Flow Diagram:**
-```
+
+```text
 Academic databases: n = [X]
 Grey literature sources: n = [Y]
 ├─ Total records: n = [X+Y]
@@ -258,11 +265,13 @@ Grey literature sources: n = [Y]
 ### 4.6 Strengths and Limitations
 
 **Strengths of this review:**
+
 - [e.g., Comprehensive search including grey literature]
 - [e.g., Inclusion of qualitative and mixed-methods evidence]
 - [e.g., Canadian-specific focus]
 
 **Limitations of this review:**
+
 - [e.g., Limited to English and French language sources]
 - [e.g., Grey literature quality varies]
 - [e.g., Heterogeneity of interventions limits direct comparison]
@@ -303,12 +312,14 @@ Organization Name. (Year). *Title of report*. Publisher (if different). URL
 ### Appendix A: Full Search Strings
 
 **[Database 1]** (Date: YYYY-MM-DD; Results: n)
-```
+
+```text
 [Complete search string]
 ```
 
 **[Grey Literature Source 1]** (Date: YYYY-MM-DD; Results: n)
-```
+
+```text
 [Search terms and method]
 ```
 
@@ -335,6 +346,7 @@ Organization Name. (Year). *Title of report*. Publisher (if different). URL
 | [Source] | [Tool] | [Rating] | [Rating] | [Rating] | [Rating] |
 
 **Program Evaluation Quality Criteria:**
+
 - Was the evaluation design appropriate?
 - Were outcomes clearly defined and measured?
 - Was the comparison group adequate (if applicable)?
@@ -345,7 +357,7 @@ Organization Name. (Year). *Title of report*. Publisher (if different). URL
 
 ### Appendix E: Data Extraction Form
 
-```
+```text
 SOURCE: Author/Organization______ Year______ DOI/URL______
 TYPE: □Peer-reviewed □Program evaluation □Government report □Other______
 DESIGN: □RCT □Quasi-experimental □Cohort □Qualitative □Mixed methods □Descriptive □Other______
@@ -368,6 +380,7 @@ FUNDING/COI: _____
 **Version**: [1.0] | **Last updated**: [Date]
 
 **Quality checks:**
+
 - [ ] Both academic and grey literature searched
 - [ ] Canadian-specific sources included (if applicable)
 - [ ] Citations verified (DOIs and URLs)
@@ -385,6 +398,7 @@ FUNDING/COI: _____
 ### Usage Notes
 
 **Review type adaptations:**
+
 - Systematic review: Use all sections; follow PRISMA 2020
 - Scoping review: Follow PRISMA-ScR; may omit quality assessment; focus on mapping evidence
 - Rapid review: Streamline search (fewer databases); shorter timeline; note limitations
@@ -392,13 +406,16 @@ FUNDING/COI: _____
 - Narrative review: More flexible structure; may omit some methodology detail
 
 **For grant applications:**
+
 - Emphasize the Executive Summary, Practice Recommendations, and Evidence Gaps sections
 - Frame gaps as opportunities the proposed program will address
 
 **For program design:**
+
 - Emphasize Thematic Synthesis, Implementation Considerations, and Practice Recommendations
 - Extract specific program components that evidence supports
 
 **For policy briefs:**
+
 - Lead with Plain Language Summary and Policy Implications
 - Keep under 10 pages; move details to appendices

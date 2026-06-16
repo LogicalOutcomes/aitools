@@ -277,3 +277,5 @@ Consensus searches peer-reviewed academic literature and summarizes findings. Re
 *This sample plan was created using the [LogicalOutcomes Evaluation Planner](https://evalplanner.logicaloutcomes.net/)*
 
 *Last updated: January 2026*
+
+<!-- END OF FILE: evaluation-framework-builder/references/sample-plan.md — if you do not see this line, the file was truncated in transit. -->

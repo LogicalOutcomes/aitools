@@ -21,6 +21,7 @@ This document provides detailed search guidance for academic databases, Canadian
 **Best for**: Mental health, substance use, behavioral interventions, developmental psychology, community psychology
 
 **Search tips**:
+
 - Use Thesaurus terms (equivalent to MeSH): DE "Homelessness", DE "At Risk Populations"
 - Field codes: TI (title), AB (abstract), DE (descriptor/subject), AG (age group)
 - Age group filters: Childhood (birth-12), Adolescence (13-17), Adulthood (18+)
@@ -28,7 +29,8 @@ This document provides detailed search guidance for academic databases, Canadian
 - Methodology filters: Empirical Study, Qualitative Study, Meta Analysis, Literature Review
 
 **Example search — homeless youth interventions:**
-```
+
+```text
 (DE "Homeless" OR DE "Homelessness" OR TI "homeless*" OR AB "homeless*" OR
  AB "housing instability" OR AB "street youth" OR AB "unhoused")
 AND
@@ -47,12 +49,14 @@ AND
 **Best for**: Community health nursing, health promotion, patient education, public health nursing, social determinants of health
 
 **Search tips**:
+
 - Use CINAHL Subject Headings (similar to MeSH)
 - Field codes: MH (exact subject heading), MW (word in subject heading), TI, AB
 - Subheadings available for subject headings (e.g., MH "Homelessness/PF" for psychosocial factors)
 
 **Example search:**
-```
+
+```text
 (MH "Homeless Persons" OR MH "Homeless Youth" OR TI "homeless*" OR AB "homeless*")
 AND
 (MH "Adolescence" OR MH "Young Adult" OR TI "youth" OR AB "young people")
@@ -70,6 +74,7 @@ AND
 **Best for**: Direct practice, child welfare, family services, community organizing, social policy
 
 **Search tips**:
+
 - Smaller database — use broader search terms
 - Less controlled vocabulary than PsycINFO or CINAHL
 - Good for finding practice-oriented literature
@@ -81,6 +86,7 @@ AND
 **Best for**: Youth programs, school-based interventions, early childhood, family literacy, mentoring
 
 **Search tips**:
+
 - Use ERIC Descriptors: e.g., "At Risk Students", "Youth Programs", "Mentors"
 - Filter by Source: Journal Articles, Reports (Evaluative), Reports (Research)
 - Filter by Education Level: Elementary, Secondary, Postsecondary
@@ -93,6 +99,7 @@ AND
 **Best for**: Finding existing "what works" evidence syntheses — saves time by starting with existing reviews
 
 **Search tips**:
+
 - Browse by Coordinating Group: Crime and Justice, Education, Social Welfare, Disability, Knowledge Translation
 - Search the Campbell Library for systematic reviews and evidence/gap maps
 - Check protocols for reviews in progress
@@ -105,6 +112,7 @@ AND
 **Best for**: Health interventions, public health, epidemiology, community health
 
 **Search tips**:
+
 - Use MeSH terms: "Homeless Persons"[MeSH], "Adolescent"[MeSH]
 - Field tags: [Title], [Title/Abstract], [MeSH Terms], [Author]
 - Use MeSH browser (meshb.nlm.nih.gov) to find standardized terms
@@ -112,7 +120,8 @@ AND
 - Publication type filters: Review, Clinical Trial, Meta-Analysis
 
 **Example search:**
-```
+
+```text
 ("Homeless Persons"[MeSH] OR "homeless*"[Title/Abstract] OR
  "housing instability"[Title/Abstract])
 AND
@@ -131,7 +140,8 @@ AND 2015:2026[Publication Date]
 **Best for**: Cross-disciplinary searches, discovering citation networks, finding influential papers
 
 **API search example:**
-```
+
+```text
 GET https://api.semanticscholar.org/graph/v1/paper/search
 ?query=homeless+youth+intervention+urban+canada
 &fields=title,authors,year,abstract,citationCount,url
@@ -146,6 +156,7 @@ GET https://api.semanticscholar.org/graph/v1/paper/search
 **Best for**: Comprehensive searches, finding grey literature that appears alongside academic sources, citation tracking
 
 **Search tips**:
+
 - Use quotes for exact phrases: "Housing First" "youth"
 - Use `site:` to search specific domains: `site:canada.ca "homeless youth"`
 - Use "Cited by" for forward citation searching
@@ -161,7 +172,8 @@ GET https://api.semanticscholar.org/graph/v1/paper/search
 
 **URL**: cihr-irsc.gc.ca
 **What to find**: Funded research projects, knowledge synthesis grants, research reports
-**How to search**: 
+**How to search**:
+
 - Search CIHR Funding Decisions database for funded projects by keyword
 - Check CIHR Institute pages for priority areas and reports (e.g., Institute of Population and Public Health, Institute of Indigenous Peoples' Health)
 - Review CIHR Evidence Briefs and Best Brains Exchanges
@@ -171,6 +183,7 @@ GET https://api.semanticscholar.org/graph/v1/paper/search
 **URL**: canada.ca/en/public-health.html
 **What to find**: Best practice guidelines, surveillance reports, program evaluations, public health reports
 **How to search**:
+
 - Browse by topic: Mental Health, Substance Use, Social Determinants, etc.
 - Search canada.ca with topic keywords
 - Check Canadian Best Practices Portal (cbpp-pcpe.phac-aspc.gc.ca) for intervention summaries
@@ -181,6 +194,7 @@ GET https://api.semanticscholar.org/graph/v1/paper/search
 **URL**: cmhc-schl.gc.ca
 **What to find**: Housing research, homelessness data, Reaching Home program reports, National Housing Strategy research
 **How to search**:
+
 - Browse Research & Data section
 - Search Housing Research publications
 - Check Reaching Home program evaluations and data
@@ -191,6 +205,7 @@ GET https://api.semanticscholar.org/graph/v1/paper/search
 **URL**: statcan.gc.ca
 **What to find**: Census data, survey data (Canadian Community Health Survey, General Social Survey), health indicators, social indicators
 **How to search**:
+
 - Search by topic or keyword
 - Browse The Daily for recent releases
 - Access data tables and profiles
@@ -202,6 +217,7 @@ GET https://api.semanticscholar.org/graph/v1/paper/search
 **URL**: homelesshub.ca
 **What to find**: Research papers, reports, toolkits, program profiles, community plans
 **How to search**:
+
 - Use the Research Library search
 - Browse by topic: Youth, Indigenous, Mental Health, Housing First, etc.
 - Check Canadian Definition of Homelessness and related frameworks
@@ -212,25 +228,30 @@ GET https://api.semanticscholar.org/graph/v1/paper/search
 Each province has relevant sources. Key examples:
 
 **Ontario:**
+
 - Health Quality Ontario / Ontario Health: ontariohealth.ca
 - Ministry of Children, Community and Social Services reports
 - Ontario Centre of Excellence for Child and Youth Mental Health
 
 **British Columbia:**
+
 - BC Housing Research Centre
 - First Nations Health Authority: fnha.ca
 - BC Centre on Substance Use: bccsu.ca
 
 **Alberta:**
+
 - Alberta Health Services evaluations
 - Calgary Homeless Foundation reports
 - Homeward Trust Edmonton reports
 
 **Quebec:**
+
 - INSPQ (Institut national de santé publique du Québec): inspq.qc.ca
 - Note: Many Quebec sources are in French
 
 **Manitoba:**
+
 - Manitoba Centre for Health Policy: mchp-appserv.cpe.umanitoba.ca
 
 ### Other Canadian Organizations
@@ -259,23 +280,27 @@ Each province has relevant sources. Key examples:
 Grey literature searching is less standardized than academic database searching, but should still be systematic and documented.
 
 **Step 1: Organizational website searches**
+
 - Identify 10-15 key organizations in the topic area
 - Search each organization's website using their internal search and/or Google site search
 - Browse publications/resources/reports sections
 - Document: organization, date searched, search terms, number of results
 
 **Step 2: Google Advanced Search**
+
 - Use `site:` operators to search specific domains
 - Use `filetype:pdf` to find reports
 - Combine with topic keywords
 - Example: `site:canada.ca filetype:pdf "homeless youth" "evaluation" OR "evidence"`
 
 **Step 3: Government publication repositories**
+
 - Government of Canada Publications: publications.gc.ca
 - Provincial government publication sites
 - Municipal government reports and plans
 
 **Step 4: Research institute and think tank searches**
+
 - RAND Corporation: rand.org
 - Urban Institute: urban.org
 - Brookings Institution: brookings.edu
@@ -284,16 +309,19 @@ Grey literature searching is less standardized than academic database searching,
 - Caledon Institute: no longer active but archived publications remain cited
 
 **Step 5: Dissertation and thesis repositories**
+
 - ProQuest Dissertations & Theses Global
 - Theses Canada (Library and Archives Canada): bac-lac.gc.ca
 - Institutional repositories (university-specific)
 
 **Step 6: Conference proceedings**
+
 - Canadian Evaluation Society conference proceedings
 - American Public Health Association (APHA) proceedings
 - Society for Social Work and Research (SSWR) proceedings
 
 **Step 7: Expert consultation**
+
 - Contact 3-5 subject matter experts
 - Ask for unpublished reports, evaluations, working papers
 - Document who was contacted and what was received
@@ -378,6 +406,7 @@ Example question: "What are effective interventions for homeless youth in urban 
 **Step 3**: Combine concepts with AND (narrows across concepts)
 
 **Step 4**: Test and refine
+
 - Too many results? Add more concepts with AND or use more specific terms
 - Too few results? Remove a concept or add more synonyms with OR
 - Check first 50 results for relevance
@@ -388,7 +417,8 @@ Example question: "What are effective interventions for homeless youth in urban 
 Different databases use different syntax. Here's the same search adapted:
 
 **PsycINFO (Ovid):**
-```
+
+```text
 (homeless*.mp. OR housing instability.mp. OR street-involved.mp.)
 AND (youth.mp. OR adolescent*.mp. OR young adult*.mp.)
 AND (intervention*.mp. OR program*.mp. OR service*.mp.)
@@ -397,7 +427,8 @@ AND (Canada.mp. OR Canadian.mp.)
 ```
 
 **PubMed:**
-```
+
+```text
 ("Homeless Persons"[MeSH] OR homeless*[tiab] OR "housing instability"[tiab])
 AND ("Adolescent"[MeSH] OR "Young Adult"[MeSH] OR youth[tiab])
 AND (intervention*[tiab] OR program*[tiab] OR service*[tiab])
@@ -406,7 +437,8 @@ AND ("Canada"[MeSH] OR canada*[tiab])
 ```
 
 **CINAHL (EBSCOhost):**
-```
+
+```text
 (MH "Homeless Youth" OR TI homeless* OR AB homeless* OR AB "housing instability")
 AND (MH "Adolescence" OR MH "Young Adult" OR TI youth OR AB "young adult*")
 AND (MH "Program Evaluation" OR AB intervention* OR AB program*)
@@ -415,9 +447,11 @@ AND (AB Canada OR AB Canadian)
 ```
 
 **Google Scholar:**
-```
+
+```text
 "homeless youth" OR "homeless young" intervention program urban Canada
 ```
+
 (Note: Google Scholar doesn't support full Boolean — keep it simple)
 
 ---
@@ -425,6 +459,7 @@ AND (AB Canada OR AB Canadian)
 ## Quality Control
 
 ### Before Searching
+
 - [ ] Research question clearly defined with appropriate framework (PICO/SPIDER/PICo)
 - [ ] Search terms listed with synonyms for each concept
 - [ ] At least 3 academic databases selected
@@ -434,6 +469,7 @@ AND (AB Canada OR AB Canadian)
 - [ ] 3-5 known relevant papers identified to test search strategy
 
 ### During Searching
+
 - [ ] Search string tested and refined in pilot search
 - [ ] Results exported with complete metadata
 - [ ] All search parameters documented (database, date, string, filters, results count)
@@ -441,6 +477,7 @@ AND (AB Canada OR AB Canadian)
 - [ ] Known relevant papers found in search results (validation check)
 
 ### After Searching
+
 - [ ] All searches documented reproducibly
 - [ ] Duplicates removed
 - [ ] Results from all sources aggregated

@@ -107,4 +107,30 @@ List attendees by role title (matching Section 7). Each Notes cell needs 2–3 s
 
 ## 10. References
 
-- **Framework source** — link to the [LogicalOutcomes Evaluation Planning Handbook](https://papers.ssrn.com/so
+- **Framework source** — link to the [LogicalOutcomes Evaluation Planning Handbook](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4815131) (Gillian Kerr and Sophie Llewelyn, 2024)
+- **Evidence-informed approach** — note that the plan drew on web research about similar programs (if it did), or note where research would strengthen it
+- **Literature search prompt** — give a specific query the organization can run on [Consensus](https://consensus.app/), e.g., "What program components are associated with positive outcomes in [program type] interventions for [target population]?"
+
+---
+
+# Verification checklist
+
+Before presenting any complete plan, confirm:
+
+- [ ] All 10 sections present and in the correct order (depth and cadence may be right-sized for a very small organization, but no section is dropped)
+- [ ] Logic model is two 3-column tables, not one wide table
+- [ ] All evaluation framework tables have 4 columns: Outputs/Outcomes | Indicators | Data Source/Method | Frequency
+- [ ] 8–11 total indicators, at least 2 per category
+- [ ] Participant tracker is the primary data source throughout
+- [ ] Outcome indicators match the tracking the organization actually has; where tracking is weak or absent, outcomes are estimated from small-sample interviews / document review rather than tied to fields that don't exist
+- [ ] Tracker data and small-sample interviews are the default; any survey meets a rule-1 condition (valid sampling, used in service delivery, standardized instrument for benchmarking, or funder-required)
+- [ ] Disaggregation, where present, is drawn only from data that supports it (tracker, or interviews/surveys with adequate response rate and design); no identifying small cells
+- [ ] Every indicator connects to a program change action
+- [ ] Any add-on module is folded into the existing sections, not added as a new section, and its effect on effort is stated
+- [ ] Terminology correct: "interest groups" not "stakeholders"; no banned terms
+- [ ] No invented details — no specific names, dates, or numbers unless the user provided them
+- [ ] Evaluation objectives customized to this program, not generic
+- [ ] Meeting agendas reference the roles defined in Section 7
+- [ ] Sections 7–10 are at full depth — unless the plan has been deliberately right-sized for a very small organization (combined roles, collapsed meetings, lighter cadence), with the combinations named rather than the work omitted
+
+<!-- END OF FILE: evaluation-framework-builder/references/plan-structure.md — if you do not see this line, the file was truncated in transit. -->

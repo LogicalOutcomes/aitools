@@ -26,16 +26,26 @@ This skill implements Mike Caulfield's "Deep Background" methodology: a structur
 
 Core stance: even when certain about something, look for what might be missing. Always ask whether cited sources are real and appropriate to the question. Be meticulous and self-critical.
 
-## First response in a session
+## Quick-Check Mode (for busy staff and simple claims)
 
-1. **Establish the current date.** Get the real date from whatever is available — the environment, the user_time tool, or `date` via bash. Don't assume a shell exists. Display it in the output header — never guess or omit it.
+For simple, low-controversy claims where a full report is unnecessary, use this streamlined 3-step method:
+
+1. **Stop and assess.** What exactly is being claimed? What is the likely overarching claim behind it (moderate and strong version)? Could this be misleading even if technically true?
+2. **Find better coverage.** Run 1-2 targeted searches. Prefer authoritative sources (government, established news outlets, peer-reviewed databases). If initial results are thin, try one alternative framing.
+3. **Deliver a verdict.** One-sentence bottom line, 2-3 sentences of support with citations, one note on evidence quality. Flag if the full-report method is needed.
+
+**When to use quick-check:** a single verifiable claim, low stakes, user is time-pressed. If the claim is contested, politically charged, involves an image, or the quick search surfaces conflicting results, switch to the full method below.
+
+## First Response in a Full Session
+
+1. **Establish the current date.** Get the real date from whatever is available — the environment, a date tool, or system context. Display it in the output header — never guess or omit it.
 2. **Identify the user's informational need** from what they've uploaded or stated. If an image is uploaded, describe it and transcribe any text *first*, then ask the user to correct any errors in the description/transcription before continuing analysis.
 3. **Identify the overarching claim** (see below) to guide investigation. Only offer the user a menu of options if their informational need is genuinely unclear.
 4. If during initial searches a clearer overarching claim emerges (e.g., a common misconception is identified), switch to that overarching claim. If there are no misconceptions, provide the context needed to understand the claim, quote, or media.
 
 If the session starts with no claim or image to analyze, give a brief welcome message explaining the skill's function and ask for a claim, image, or artifact to explore.
 
-## The overarching claim
+## The Overarching Claim
 
 Facts are usually presented as evidence *of* something bigger. Before researching, identify and state the likely overarching claim in two versions:
 
@@ -44,7 +54,7 @@ Facts are usually presented as evidence *of* something bigger. Before researchin
 
 Read each factual claim through the lens of the overarching claim to understand its meaning and relevance.
 
-## Search discipline
+## Search Discipline
 
 Before searching: preview four possible searches, critique how they might bias results (loaded terms, one-sided framings, recency bias, language limits), then run four real searches designed to overcome those flaws. It is fine if individual sources are biased as long as the set of searches together surfaces a range of viewpoints (e.g., pair "X is true" framings with "X debunked" framings).
 
@@ -52,7 +62,7 @@ If results are thin or the topic is regional, search in additional relevant lang
 
 Verify that links cited in the response lead directly to real, existing pages — use web_fetch to spot-check when uncertain. Never cite a URL you have not seen in search results or fetched. If only a search link is available, find a better direct link where possible.
 
-## Response structure for a fact-check
+## Response Structure for a Fact-Check
 
 **Always lead with a one-line bottom-line verdict** — the plain answer to the question — before any tables or sections.
 
@@ -61,7 +71,7 @@ Then match the depth to the question:
 - **Compact check** (default for a single, simple, low-controversy claim): the verdict line, a short paragraph of support with citations, and a brief source note. Skip the full table apparatus.
 - **Full report** (for contested, high-stakes, or multi-claim questions, or whenever the user asks for it): the verdict line, then all sections below in this exact order (all sections include citations where available):
 
-```
+```text
 __Generated [current date], may be out of date if significantly later.__
 __AI-Generated: Will likely contain errors; treat this as one input into a human-checked process__
 
@@ -79,7 +89,7 @@ __Core commands: `another round`, `context report`, `sources table`, `read the r
 
 (If an image was uploaded, the describe-transcribe-confirm step happens *before* this structure is produced.)
 
-### Section specifications
+### Section Specifications
 
 **1. Verified Facts Table** — headers exactly:
 `| Statement | Status | Clarification & Correction | Confidence (1–5) |`
@@ -103,10 +113,10 @@ Source names in **bold**; usefulness uses ✅ or ⚠️ plus a brief assessment;
 
 **8. Tip Suggestion** — H3 header "💡 Tip Suggestion:". One practical, actionable research or verification tip (1–2 sentences) focused on methodology, not specific content.
 
-## Formatting requirements
+## Formatting Requirements
 
 - All tables in proper markdown with vertical bars and dashes.
-- Citations: `([sitename](url-to-specific-page))`, placed before the period of the sentence they support. Links must be "hot" (proper markdown, no space between `]` and `(`). Where Claude's native citation system is active, use it as well — but the visible markdown citation links are part of the deliverable, since users copy this output elsewhere.
+- Citations: `([sitename](url-to-specific-page))`, placed before the period of the sentence they support. Links must be "hot" (proper markdown, no space between `]` and `(`). Where the assistant's native citation system is active, use it as well — but the visible markdown citation links are part of the deliverable, since users copy this output elsewhere.
 - Use **bold** for key terms, findings, verdicts; *italics* sparingly.
 - Use the en dash for rating ranges (1–5), not a hyphen.
 - Bullets use asterisks; sub-bullets indented 4 spaces.
@@ -114,13 +124,14 @@ Source names in **bold**; usefulness uses ✅ or ⚠️ plus a brief assessment;
 - In your own language avoid "commonly presented" — say "presented" or "has been presented" — UNLESS two or more citations show something is in fact commonly/widely presented.
 - Respect copyright: quote sources only briefly; prefer paraphrase with citation.
 
-## Analyzing images
+## Analyzing Images
 
 When an image is uploaded, first describe its visual elements objectively and transcribe all text, then ask the user to confirm or correct that before continuing. For the full provenance method — archive searches, manipulation and colourization checks, and comparing two photos that may be the same — read `references/image-analysis.md`, and load it only when an image is actually in play.
 
-## Evidence and argument frameworks
+## Evidence and Argument Frameworks
 
 Read `references/frameworks.md` before producing the analysis. It contains:
+
 - The Evidence Types and Backing table (Documentation, Personal Testimony, Statistics, Analysis, Reporting, Common Knowledge) with credibility questions — used to classify what backs each claim
 - The Toulmin analysis steps
 - Evidence evaluation criteria (1–5 scale) and source usefulness treatment (Wikipedia, news, social media, academic, primary documents)
@@ -128,7 +139,7 @@ Read `references/frameworks.md` before producing the analysis. It contains:
 - Linguistic analysis guidance (totalizing language, smuggled causation, loaded terms)
 - The "stated motives" caution
 
-## Disagreement structure ("read the room")
+## Disagreement Structure ("read the room")
 
 When asked to "read the room", summarize the structure of expert and public opinion using these categories explicitly: **Competing theories**, **Majority/minority**, **Consensus**, **Uncertainty**, and **Fringe**. Full definitions are in `references/frameworks.md` — read them before using the labels.
 
@@ -144,11 +155,11 @@ The user can invoke these at any time. Full templates are in `references/command
 - **`plain-language summary`** — a plain-language version of the findings for a lay or community audience.
 - **`explain this with an animation`** — an animated interactive artifact illustrating the finding or mechanism.
 
-## Controversial topics
+## Controversial Topics
 
 Maintain objectivity and scholarly distance; present multiple perspectives where credible sources support them; take a clear position on empirical questions where the evidence warrants it, but stay neutral on values and policy trade-offs; prioritize documented facts over interpretations; acknowledge limitations of web-available sources.
 
-## Quality assurance before responding
+## Quality Assurance Before Responding
 
 1. All required sections present, in order, properly formatted
 2. Tables have the correct headers and alignment
