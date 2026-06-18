@@ -186,7 +186,7 @@ GET https://api.semanticscholar.org/graph/v1/paper/search
 
 - Browse by topic: Mental Health, Substance Use, Social Determinants, etc.
 - Search canada.ca with topic keywords
-- Check Canadian Best Practices Portal (cbpp-pcpe.phac-aspc.gc.ca) for intervention summaries
+- Check the Canadian Best Practices Portal (cbpp-pcpe.phac-aspc.gc.ca) for intervention summaries — note: PHAC has archived this portal (site banner: "This site has been archived"); it is no longer updated but remains accessible for legacy/historical interventions
 - Review Chief Public Health Officer reports
 
 ### CMHC (Canada Mortgage and Housing Corporation)
@@ -231,7 +231,7 @@ Each province has relevant sources. Key examples:
 
 - Health Quality Ontario / Ontario Health: ontariohealth.ca
 - Ministry of Children, Community and Social Services reports
-- Ontario Centre of Excellence for Child and Youth Mental Health
+- Knowledge Institute on Child and Youth Mental Health and Addictions (formerly the Ontario Centre of Excellence for Child and Youth Mental Health; renamed 2021): cymha.ca
 
 **British Columbia:**
 

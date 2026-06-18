@@ -3,7 +3,7 @@ name: social-services-review
 description: Literature reviews and evidence syntheses for non-profit, community, social, and health services. Searches academic databases AND grey literature (government reports, program evaluations, community org publications). Uses RE-AIM, Theory of Change, logic models. Outputs for funders, practitioners, and policy makers. Includes Canadian sources (CIHR, PHAC, CMHC, Statistics Canada) and social science databases (Campbell Collaboration, CINAHL, PsycINFO, ERIC). Use for literature reviews, evidence syntheses, environmental scans, scoping reviews, or program evaluation evidence in homelessness, housing, mental health, substance use, youth services, Indigenous health, immigrant services, poverty, child welfare, public health, or any non-profit domain. Also triggers on "what works" or "what's the evidence for" questions about social programs.
 license: MIT
 metadata:
-  version: 1.1.0
+  version: 1.1.1
   author: LogicalOutcomes
   source: https://github.com/LogicalOutcomes/aitools
   inspired_by: https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/literature-review
@@ -477,7 +477,7 @@ This skill bundles these helper scripts — no separate literature-review skill 
 - Cochrane Handbook: <https://training.cochrane.org/handbook>
 - CASP Checklists: <https://casp-uk.net/casp-tools-checklists/>
 - MMAT (Mixed Methods): <https://mixedmethodsappraisaltoolpublic.pbworks.com/>
-- AACODS (Grey Literature): <https://dspace.flinders.edu.au/jspui/bitstream/2328/3326/4/AACODS_Checklist.pdf>
+- AACODS (Grey Literature): <https://fac.flinders.edu.au/dspace/api/core/bitstreams/e94a96eb-0334-4300-8880-c836d4d9a676/content>
 - RE-AIM Framework: <https://re-aim.org/>
 - Canadian Observatory on Homelessness: <https://www.homelesshub.ca/>
 - Canadian Evaluation Society: <https://evaluationcanada.ca/>
