@@ -3,7 +3,7 @@ name: social-services-review
 description: Literature reviews and evidence syntheses for non-profit, community, social, and health services. Searches academic databases AND grey literature (government reports, program evaluations, community org publications). Uses RE-AIM, Theory of Change, logic models. Outputs for funders, practitioners, and policy makers. Includes Canadian sources (CIHR, PHAC, CMHC, Statistics Canada) and social science databases (Campbell Collaboration, CINAHL, PsycINFO, ERIC). Use for literature reviews, evidence syntheses, environmental scans, scoping reviews, or program evaluation evidence in homelessness, housing, mental health, substance use, youth services, Indigenous health, immigrant services, poverty, child welfare, public health, or any non-profit domain. Also triggers on "what works" or "what's the evidence for" questions about social programs.
 license: MIT
 metadata:
-  version: 1.0.0
+  version: 1.1.0
   author: LogicalOutcomes
   source: https://github.com/LogicalOutcomes/aitools
   inspired_by: https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/literature-review
@@ -206,7 +206,7 @@ Grey literature is critical in social services — program evaluations, governme
 
 | Source | Type | URL |
 |--------|------|-----|
-| Grey Literature Report (NYAM) | Health services grey lit — archive only, not updated since 2017 | greylit.org |
+| Grey Literature Report (NYAM) | Discontinued service; historical archive only (ceased ~2017). Listed for legacy citations | greylit.org |
 | ProQuest Dissertations | Theses & dissertations | proquest.com |
 | Government of Canada Publications | Federal reports | publications.gc.ca |
 | Homeless Hub | Canadian homelessness research | homelesshub.ca |
@@ -381,23 +381,18 @@ For each database or source searched, document:
 
 ### Phase 6: Citation Verification
 
-All citations must be verified for accuracy before finalizing.
+Citation accuracy is non-negotiable. A fabricated or unverifiable reference is a
+failure of the whole review, not a cosmetic defect.
 
-1. **Verify DOIs** for peer-reviewed sources:
+**Follow the shared protocol in [`references/citation_verification.md`](references/citation_verification.md).** In brief:
 
-   ```bash
-   python scripts/verify_citations.py my_review.md
-   ```
+- No reference goes in the output unless, in this session, a live web retrieval returned a record whose title, first author, year, and venue match the citation. Never fill a citation in from the model's prior knowledge.
+- Use your assistant's **web-search capability** to locate each source, and its **fetch/browse capability** to open the authoritative record (DOI or publisher page, PubMed, the journal site, or the issuing organization's own page for grey literature). Read the metadata off the opened page, not from memory.
+- A DOI that does not resolve is the classic signature of a fabricated reference — drop it.
+- Apply the same standard to every statistic, percentage, and effect size.
+- Append the required **provenance table** mapping each reference to the URL opened and a confirmed/flagged status.
 
-2. **Verify URLs** for grey literature sources:
-   - Check that all URLs are still active
-   - Note the access date for web-based sources
-   - Archive important URLs via web.archive.org if concerned about link rot
-
-3. **Format Citations Consistently**:
-   - Choose one citation style (APA 7th is standard in social sciences)
-   - See `references/citation_styles.md` for formatting details
-   - Grey literature citations need: Author/Organization, Year, Title, Publisher/Organization, URL
+The bundled `scripts/verify_citations.py` is an **optional offline second pass** only. It needs open internet access to doi.org/CrossRef, which most hosted AI code sandboxes block, so it cannot be your primary check — verify live in-session as above.
 
 ### Phase 7: Document Generation
 
@@ -461,7 +456,7 @@ For detailed search strategies, see `references/database_strategies.md`. Quick r
 
 This skill bundles these helper scripts — no separate literature-review skill is required:
 
-- `scripts/verify_citations.py` — Verify DOIs and format citations
+- `scripts/verify_citations.py` — Optional offline DOI batch-check (needs open internet; fails loud and exits non-zero if it cannot reach the verifier). Primary verification is the live protocol in `references/citation_verification.md`
 - `scripts/generate_pdf.py` — Convert markdown to professional PDF
 - `scripts/parse_exported_results.py` — Process and deduplicate exported search results (note: this script processes results you export from a database; it does not search databases directly)
 
@@ -472,10 +467,11 @@ This skill bundles these helper scripts — no separate literature-review skill 
 - `assets/review_template.md` — Review template adapted for social services
 - `references/citation_styles.md` — Citation formatting guide (APA, Vancouver, etc.)
 - `references/database_strategies.md` — Detailed database search strategies for social science and Canadian sources
+- `references/citation_verification.md` — Shared, platform-neutral citation-verification protocol (used by Phase 6)
 
 ### External Resources
 
-- PRISMA (Systematic Reviews): <http://www.prisma-statement.org/>
+- PRISMA (Systematic Reviews): <https://www.prisma-statement.org/>
 - PRISMA-ScR (Scoping Reviews): <https://www.equator-network.org/reporting-guidelines/prisma-scr/>
 - Campbell Collaboration: <https://www.campbellcollaboration.org/>
 - Cochrane Handbook: <https://training.cochrane.org/handbook>

@@ -264,13 +264,17 @@ This plan is based on the [LogicalOutcomes Evaluation Planning Handbook](https:/
 
 ### Evidence-informed approach
 
-This evaluation plan was developed using an AI-assisted literature review process. The system searched academic databases for research on employment readiness programs serving newcomers to Canada with professional backgrounds, focusing on common success factors, population-specific considerations, and evaluation methodologies used in similar programs. These findings informed the recommended indicators and data collection approaches above.
+This plan's indicators and data-collection choices were informed by a focused scan of research on employment programs for skilled newcomers to Canada. The evidence is *suggestive* of program components associated with stronger outcomes — formal credential assessment, employer connection, and combined language-plus-work supports — and was used to inform, not dictate, the indicators above.
 
-To conduct your own literature review and verify the evidence base, use **[Consensus](https://consensus.app/)** with this search:
+### References
 
-> **What program components are associated with positive employment outcomes in employment readiness interventions for skilled immigrants and newcomers?**
+Banerjee, R., Hou, F., Reitz, J. G., & Zhang, T. (2021). Evaluating foreign skills: Effects of credential assessment on skilled immigrants' labour market performance in Canada. *Canadian Public Policy, 47*(3), 358–372. https://doi.org/10.3138/cpp.2021-014
 
-Consensus searches peer-reviewed academic literature and summarizes findings. Refine the search based on your specific context, such as adding "credential recognition" or "Canadian labour market integration" to explore particular aspects of the program model.
+Butschek, S., & Walter, T. (2014). What active labour market programmes work for immigrants in Europe? A meta-analysis of the evaluation literature. *IZA Journal of Migration, 3*, 48. https://doi.org/10.1186/s40176-014-0023-6
+
+Employment and Social Development Canada. (2025). *Evaluation of the Foreign Credential Recognition Program*. https://www.canada.ca/en/employment-social-development/corporate/reports/evaluations/foreign-credential-recognition.html
+
+*For a fuller evidence synthesis, run the `social-services-review` skill (in this same repository) on the design question.*
 
 ---
 

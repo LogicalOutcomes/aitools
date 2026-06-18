@@ -52,7 +52,7 @@ The basic framework gives useful but often *suggestive* findings. When the evalu
 | If they need to… | Add |
 |---|---|
 | Understand *why* a problem is happening (e.g., rising staff turnover or participant drop-out) | "Five Whys" + targeted staff/participant interviews; employee-engagement review |
-| Justify or improve program design from evidence | Brief literature review (e.g., a Consensus search) |
+| Justify or improve program design from evidence | Verified evidence scan (see Research step); or the `social-services-review` skill (in this same repository) for a full review |
 | Confirm the program is delivered as intended | Implementation-fidelity measures tied to the program model |
 | Examine equity in depth | Equity/DEI audit; community-based participatory methods; community-defined outcomes |
 | Assess cost-effectiveness or process efficiency | Business-process analysis, participant journey mapping, cost-benefit |
@@ -63,7 +63,19 @@ A module is a scoped addition to the standard plan, not a replacement for it.
 
 ### Research
 
-Use web search to find the organization's website, understand similar program models and their evidence base, and identify evaluation approaches used with comparable programs. Use the organization's own language for the people they serve (e.g., "survivors," "youth," "families") — check their website, and never substitute generic or deficit-based terms. If research turns up little, proceed with what the user provided and note where more information would strengthen the plan. Don't fabricate references or statistics; claims about evidence come from search results or are flagged as needing verification.
+Use web search to find the organization's website, understand similar program models and their evidence base, and identify evaluation approaches used with comparable programs. Use the organization's own language for the people they serve (e.g., "survivors," "youth," "families") — check their website, and never substitute generic or deficit-based terms. If research turns up little, proceed with what the user provided and note where more information would strengthen the plan.
+
+This step also produces the report's References (Section 10), so it carries a hard accuracy rule. Earlier versions of this skill dropped citations because they were hallucinated; citations are included again **only** under the discipline below. (The discipline assumes your assistant can open web pages. If it cannot browse, do not write citations from memory — instead flag each evidence claim for human verification and keep only the fixed framework source in Section 10.)
+
+The discipline governs the **evidence-scan sources only**. The framework source (the handbook SSRN link) and the LogicalOutcomes Evaluation Planner link are fixed, permanently stable references — cite them exactly as given, and never re-open or re-verify them.
+
+- **Open-to-cite.** Cite a source only if, in this session, you opened its authoritative record — the DOI/publisher landing page, PubMed, the journal, or (for grey literature) the issuing organization's own page — and confirmed its title, first author, year, and venue *from that page*, not from memory. If you have not opened the page, do not cite it.
+- **Match the record, don't just resolve a link.** A dead link is an obvious fabrication signal, but the more common and more dangerous error is a *live* link to the wrong record: a near-identical title, an adjacent year, a preprint standing in for the version of record, or one entry in a multi-year report series. Confirm the page you opened reports the *same* title, authors, and year as the citation you are writing. Where several similar records exist — government evaluations and report series are the usual traps — pin down the specific one you actually drew on and cite that, not a sibling.
+- **Verified, not padded — fewer is fine, including none.** This is a focused scan, not a literature review, so the quality gate is absolute and there is no minimum count. Cite only what you confirmed by opening the record; if that is two sources, cite two; if the scan turns up nothing confirmable, the references section carries only the framework source and says the scan found no citable evidence. Never add a source to reach a number, and stop at roughly six to eight even when more exist. For a fuller synthesis, use the `social-services-review` skill (in this same repository) instead of expanding this step.
+- **Evidence is advisory.** Findings inform the indicators the plan already has; they do not expand the outcome set. The literature shows what is *associated with* outcomes — it cannot override what this organization can feasibly track and act on (capacity outranks evidence).
+- **Flag, don't fabricate.** Any evidence claim, statistic, or effect size that can't be tied to a source you opened is flagged `[needs verification]` or omitted — never invented. This applies to references and numbers alike.
+
+Record the confirmed sources (with the links that resolved to the matching record) for Section 10. Do the verification; do not narrate it in the plan — the deliverable carries the references themselves, not a sentence asserting they were checked (a self-attestation a reader can't verify and that reads as AI boilerplate). If you want an audit trail, keep it in working notes outside the client document.
 
 ### Generate
 
@@ -80,7 +92,7 @@ After those two, consult these only when relevant (don't load them every time):
 
 ### Review and deliver
 
-Present the draft in Markdown and invite corrections — offer to adjust indicators, outcomes, or interest groups. Markdown is the default deliverable. If the user wants a polished client-facing document, offer a Word version (use the docx skill) or the print-styled HTML in `assets/html-template.html` (copy the head template verbatim; follow the body structure and table patterns in its comments).
+Present the draft in Markdown and invite corrections — offer to adjust indicators, outcomes, or interest groups. Markdown is the default deliverable. If the user wants a polished client-facing document, offer a Word version (if your assistant can produce one) or the print-styled HTML in `assets/html-template.html`, which prints cleanly to PDF (copy the head template verbatim; follow the body structure and table patterns in its comments).
 
 ## Framework rules (non-negotiable)
 
@@ -134,6 +146,6 @@ Run the full checklist at the end of `references/plan-structure.md`. The most co
 ## Pointers
 
 - Methodology source: [LogicalOutcomes Evaluation Planning Handbook](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4815131) (Kerr & Llewelyn, 2024). A full copy is bundled at `references/evaluation-planning-handbook.md` for offline reference.
-- **Source-of-truth hierarchy.** The handbook governs *methodology and principles* — evaluation as an intervention, participant-informed practice, minimizing burden, building capacity incrementally, serving all three reasons for evaluating at once. LogicalOutcomes' current operationalization governs *output structure and terminology*: the 10-section plan, the two-table logic model, and the current vocabulary ("interest groups," "participant tracker") deliberately update the 2024 handbook's wording (which still says "stakeholders" and "CMS"). So follow this skill for structure and terms; defer to the handbook on method. If the skill and handbook disagree on **methodology**, defer to the handbook and flag the discrepancy rather than silently diverging.
+- **Source-of-truth hierarchy.** The handbook governs *methodology and principles* — evaluation as an intervention, participant-informed practice, minimizing burden, building capacity incrementally, serving all three reasons for evaluating at once. LogicalOutcomes' current operationalization governs *output structure and terminology*: the 10-section plan, the two-table logic model, and the current vocabulary ("interest groups," "participant tracker") deliberately update the 2024 handbook's wording (which still says "stakeholders" and "CMS"). So follow this skill for structure and terms; defer to the handbook on method. If the skill and handbook disagree on **methodology**, the handbook wins — flag the discrepancy rather than silently diverging.
 
 <!-- END OF FILE: evaluation-framework-builder/SKILL.md — if you do not see this line, the file was truncated in transit. -->

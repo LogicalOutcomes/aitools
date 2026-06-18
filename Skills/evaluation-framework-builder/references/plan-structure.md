@@ -107,9 +107,12 @@ List attendees by role title (matching Section 7). Each Notes cell needs 2–3 s
 
 ## 10. References
 
-- **Framework source** — link to the [LogicalOutcomes Evaluation Planning Handbook](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4815131) (Gillian Kerr and Sophie Llewelyn, 2024)
-- **Evidence-informed approach** — note that the plan drew on web research about similar programs (if it did), or note where research would strengthen it
-- **Literature search prompt** — give a specific query the organization can run on [Consensus](https://consensus.app/), e.g., "What program components are associated with positive outcomes in [program type] interventions for [target population]?"
+- **Framework source** — link to the [LogicalOutcomes Evaluation Planning Handbook](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4815131) (Gillian Kerr and Sophie Llewelyn, 2024). This is a fixed, permanently stable reference: cite it exactly as given and do **not** re-open or re-verify it. The open-to-cite rule applies only to the evidence-scan sources in the references list below.
+- **Evidence-informed approach** — one or two sentences on how the plan used the evidence scan, and where more evidence would strengthen it
+- **References list** — the sources the scan confirmed, in APA 7th, each with a link that resolves to the matching record (DOI preferred). Include **only** sources confirmed by opening the authoritative record in this session (see the Research step), and confirm the resolved page matches the citation's title, authors, and year — not just that the link opens. Cite as few as the evidence supports: do not pad to reach a number, and it is fine for this list to be short, or to be absent entirely (framework source only) when the scan found nothing citable. At most six to eight.
+- Write the references plainly and do **not** add a sentence claiming they were verified. The verification is process, not deliverable content; a self-attestation reads as AI boilerplate and a reader cannot check it. Any audit trail you want belongs in working notes, not the client document.
+
+For a fuller evidence base, run the `social-services-review` skill (in this same repository) on the design question rather than expanding this section into a review.
 
 ---
 
@@ -129,6 +132,7 @@ Before presenting any complete plan, confirm:
 - [ ] Any add-on module is folded into the existing sections, not added as a new section, and its effect on effort is stated
 - [ ] Terminology correct: "interest groups" not "stakeholders"; no banned terms
 - [ ] No invented details — no specific names, dates, or numbers unless the user provided them
+- [ ] Every **evidence-scan** reference in Section 10 was confirmed by opening its authoritative record in this session, whose page matches the citation's title, author, year, and venue (not merely a link that resolves); the right record is cited where similar ones exist; no citation written from memory; the list is not padded to a count (short or framework-source-only is fine); no sentence asserting the references were verified; any unverifiable evidence claim flagged rather than invented. (The fixed framework source and Evaluation Planner link are exempt — never re-opened.)
 - [ ] Evaluation objectives customized to this program, not generic
 - [ ] Meeting agendas reference the roles defined in Section 7
 - [ ] Sections 7–10 are at full depth — unless the plan has been deliberately right-sized for a very small organization (combined roles, collapsed meetings, lighter cadence), with the combinations named rather than the work omitted
