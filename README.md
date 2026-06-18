@@ -17,7 +17,7 @@ you'll find ordinary writing describing how an experienced person would approach
 makes a skill useful in three ways: you can **use it** with an AI assistant, you can **read it**
 to learn how we do the work, or you can **adapt it** into your own materials.
 
-The skill format is **open and not tied to any one company's AI**. The format was introduced in Claude, but the same skills work with any up to date AI chat platform. Nothing here is locked to a single product. However, you may need to tweak the skills to fit  your own context and model; test them and see. 
+The skill format is **open and not tied to any one company's AI**. The format was introduced in Claude, but the same skills work with any up to date AI chat platform. Nothing here is locked to a single product. However, you may need to tweak the skills to fit  your own context and model; test them and see.
 
 ## What's in here
 
@@ -34,12 +34,12 @@ inside its folder.
 <!-- SKILLS-INDEX:START -->
 | Skill | What it does |
 | --- | --- |
-| [`convening-experts`](convening-experts/) | Convenes expert panels for problem-solving through multi-round collaborative discussion. |
-| [`deep-background`](deep-background/) | Meticulous fact-checking, claim analysis, and contextualization using Mike Caulfield's Deep Background methodology. |
-| [`document-analysis`](document-analysis/) | Analyze documents the user already has — evaluation reports, program documents, interview transcripts, research papers, strategic plans, data files. |
-| [`evaluation-framework-builder`](evaluation-framework-builder/) | Drafts complete program evaluation plans using the LogicalOutcomes evaluation framework (Kerr & Llewelyn, 2024) — logic model, evaluation questions, indicators, interest groups analysis, project roles, schedule, and meeting agendas. |
-| [`project-starter`](project-starter/) | Sets up new nonprofit projects using bundled handbook-style templates — drafts the project charter from a proposal, SOW, contract, email, or rough notes; assigns project roles; drafts role-and-terms emails for contractors and employees; and prepares client and internal kick-off meeting agendas. |
-| [`social-services-review`](social-services-review/) | Literature reviews and evidence syntheses for non-profit, community, social, and health services. |
+| [`convening-experts`](Skills/convening-experts/) | Convenes expert panels for problem-solving through multi-round collaborative discussion. |
+| [`deep-background`](Skills/deep-background/) | Meticulous fact-checking, claim analysis, and contextualization using Mike Caulfield's Deep Background methodology. |
+| [`document-analysis`](Skills/document-analysis/) | Analyze documents the user already has — evaluation reports, program documents, interview transcripts, research papers, strategic plans, data files. |
+| [`evaluation-framework-builder`](Skills/evaluation-framework-builder/) | Drafts complete program evaluation plans using the LogicalOutcomes evaluation framework (Kerr & Llewelyn, 2024) — logic model, evaluation questions, indicators, interest groups analysis, project roles, schedule, and meeting agendas. |
+| [`project-starter`](Skills/project-starter/) | Sets up new nonprofit projects using bundled handbook-style templates — drafts the project charter from a proposal, SOW, contract, email, or rough notes; assigns project roles; drafts role-and-terms emails for contractors and employees; and prepares client and internal kick-off meeting agendas. |
+| [`social-services-review`](Skills/social-services-review/) | Literature reviews and evidence syntheses for non-profit, community, social, and health services. |
 <!-- SKILLS-INDEX:END -->
 
 ## Skills we recommend but don't copy
@@ -55,10 +55,11 @@ guide for the task yourself, or paste relevant parts into whatever AI assistant 
 along with your own request. This works with any assistant and needs no setup.
 
 **With an AI assistant that supports skills.** Many assistants let you add a skill so it loads on
-its own when your request matches. Download the skill's `.zip` from this repository and add it
-through your assistant's skills or capabilities settings. After that, you describe your task in
-plain language and the assistant follows the skill — you don't have to mention it by name. The
-exact menu wording differs between tools, so check your assistant's help if you're unsure.
+its own when your request matches. Copy the skill's folder from this repository (or download the
+repository and use the folder you need) and add it through your assistant's skills or capabilities
+settings. After that, you describe your task in plain language and the assistant follows the skill —
+you don't have to mention it by name. The exact menu wording differs between tools, so check your
+assistant's help if you're unsure.
 
 **Adapt it for your organization.** These are starting points, not rules. Several skills contain
 blanks to fill in (like `[ORGANIZATION]` or a sample fee) and templates you should match to your
@@ -93,5 +94,3 @@ Some of these build on others' work, credited in the skill's front matter and he
 - **`evaluation-framework-builder`** draws on the *LogicalOutcomes Evaluation Planning Handbook*
   (Kerr & Llewelyn, 2024), which is itself shared under CC BY 4.0
   ([read it on SSRN](https://ssrn.com/abstract=4815131)).
-
-
